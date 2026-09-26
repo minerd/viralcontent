@@ -12,7 +12,8 @@
 | `templates/draft-prompt.md` | Taslak ve düzeltme için hazır prompt |
 | `research/idea-bank.md` | 40 orijinal başlık, kategori ve yayın sırasıyla |
 | `research/trend-radar-2026-09.md` | Eylül 2026 trend radarı: yeni AI ürünleri, yeni terimler, cihazlar, para/sağlık, markalar (~60 konu, kaynaklı) |
-| `articles/` | 44 İngilizce makale |
+| `research/low-competition-2026-09.md` | Az rekabetli konular: Google rekabet testi, forum soruları, Product Hunt, GitHub/HN, Exploding Topics (~90 konu) |
+| `articles/` | 54 İngilizce makale |
 
 ## Makaleler
 
@@ -51,7 +52,9 @@
 
 31–44: **az rekabetli** yeni özellik/forum sorunları (Pinterest Restyle, YouTube custom feeds, Microduck, Bonsai 2, Clementine, ghostlighting, agent washing, watchOS 27 Siri timer, Siri AI sorunları, Siri AI neden yok, Astra/Sol/Luna, Spotify Taste Profile, Pixel Health Guardian, Android Motion Assist)
 
-4–44 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
+45–54: **Product Hunt / GitHub / trend terimleri** (Voiskey vs MosMos vs Loqua, Zella, ToneBird, world model / PixVerse R2, Human Atlas, Spotifast, Fugleramme, Remember November 2026 meme, Jimothy raccoon, run club friends)
+
+4–54 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
 
 Taslaklardaki `[ADD: ...]` yerleri senin gerçek deneme sonuçların ve ekran görüntülerinle doldurulmalı.
 Bu kısım bilerek boş: yazıyı Google'da sıralatan ve insan yazmış gibi hissettiren şey tam olarak o.
