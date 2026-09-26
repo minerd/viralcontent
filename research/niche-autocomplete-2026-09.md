@@ -42,3 +42,33 @@ Tüm çıktı: `data/longtail-queries.txt` (7.728 markasız soru, 6+ kelime).
 
 ## Sonraki adım
 `data/longtail-queries.txt` içinde 700'den fazla mevsimlik (fall/winter) soru daha var. Her turda 20'şerli grupları test et ve sadece LOW olanları yaz. En iyi sinyal şu: ilk sonuçlarda Reddit, Quora ve forumlar baskınsa, **ya da** büyük siteler sorunun tersini veya daha genel bir versiyonunu cevaplıyorsa.
+
+## Tur 2: Nadir hobiler (`tools/ac_miner_rare.py`, `data/longtail-queries-rare.txt`, 3.982 soru)
+
+Alanlar: bıldırcın, isopod, hermit crab, chinchilla, sugar glider, bonsai, etobur bitkiler, kefir, ginger bug, natto, çömlek, punch needle, metal dedektörü, teleskop, soba, sump pump…
+Sonuç: **60 sorgudan 18'i LOW**. Nadir alanlar belirgin şekilde daha iyi çıktı (ilk turda 60'ta 17'ydi, bu turda 60'ta 18, ve boşluklar daha net).
+
+En güçlü sinyal: büyük sitelerin **sorunun tersini** cevaplaması. Örnekler: sugar glider "bite" var, "lick" yok · cockatiel "scream" var, "sing at night" yok · punch needle "loops falling out" var, "loops too big" yok · air dry clay "cracking while drying" var, "while molding" yok.
+
+| Sorgu | Makale |
+|---|---|
+| why does my hamster squeak when eating | ✅ 70 |
+| why is my hamster squeaking when sleeping | ✅ 71 |
+| why does my sugar glider lick me | ✅ 72 |
+| why does my cockatiel sing at night | ✅ 73 |
+| why does my bird sneeze after drinking water | ✅ 74 |
+| why is my budgie vibrating his wings | ✅ 75 |
+| why does my chinchilla make noises at night | ✅ 76 |
+| why is my fermented hot sauce bitter | ✅ 77 |
+| why does my natto smell like ammonia | ✅ 78 |
+| why does my ginger bug smell like vinegar | ✅ 79 |
+| why is my ginger bug soda not carbonating | ✅ 80 |
+| why is my rubber plant drooping after repotting | ✅ 81 |
+| why is my string of hearts not pink | ✅ 82 |
+| why are my punch needle loops so big | ✅ 83 |
+| how to make air dry clay shiny | ✅ 84 |
+| why is my air dry clay cracking while molding | ✅ 85 |
+| can you make ginger bug with coconut sugar | (80'in SSS bölümünde) |
+| why is my ducks pool water red · why does my bird bath have a hole in it | LOW ama talep çok küçük |
+
+**Sınırda:** can you punch needle with embroidery floss · can you wet felt after needle felting · is it normal for goats to pant · amaryllis bulb turning red (kırmızı kabuk normal olabilir açısı) · string of hearts flowering · bat circling house (manevi anlam açısı)

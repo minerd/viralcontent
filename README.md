@@ -15,7 +15,8 @@
 | `research/low-competition-2026-09.md` | Az rekabetli konular: Google rekabet testi, forum soruları, Product Hunt, GitHub/HN, Exploding Topics (~90 konu) |
 | `research/niche-autocomplete-2026-09.md` | **Markasız niş yöntem**: Google otomatik tamamlama + rekabet testi |
 | `tools/ac_miner.py` + `data/longtail-queries.txt` | Konu madencisi ve 7.728 gerçek, markasız soru |
-| `articles/` | 69 İngilizce makale |
+| `tools/ac_miner_rare.py` + `data/longtail-queries-rare.txt` | Nadir hobiler için madenci ve 3.982 soru |
+| `articles/` | 85 İngilizce makale |
 
 ## Makaleler
 
@@ -58,9 +59,11 @@
 
 55–69: **Markasız niş sorular** (Google önerisi = talep var, rekabet testi = LOW): hummingbird feeder, guinea pig kış bakımı, rabbit, dog bath, leopard gecko, coffee grounds, snake plant, hoya, fiddle leaf fig, cast iron, cold brew tea, bread machine, shrimp tank
 
+70–85: **Nadir hobiler** (hamster, sugar glider, cockatiel, budgie, chinchilla, fermente acı sos, natto, ginger bug, rubber plant, string of hearts, punch needle, air dry clay). Büyük siteler buralarda sorunun ya **tersini** ya da daha genelini cevaplıyor.
+
 ⚠️ Denetim notu: 31–54 arasındaki marka/ürün yazılarının çoğunun rekabeti sonradan yüksek çıktı. Ayrıntı `research/low-competition-2026-09.md` bölüm 7'de.
 
-4–69 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
+4–85 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
 
 Taslaklardaki `[ADD: ...]` yerleri senin gerçek deneme sonuçların ve ekran görüntülerinle doldurulmalı.
 Bu kısım bilerek boş: yazıyı Google'da sıralatan ve insan yazmış gibi hissettiren şey tam olarak o.
