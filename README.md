@@ -16,7 +16,8 @@
 | `research/niche-autocomplete-2026-09.md` | **Markasız niş yöntem**: Google otomatik tamamlama + rekabet testi |
 | `tools/ac_miner.py` + `data/longtail-queries.txt` | Konu madencisi ve 7.728 gerçek, markasız soru |
 | `tools/ac_miner_rare.py` + `data/longtail-queries-rare.txt` | Nadir hobiler için madenci ve 3.982 soru |
-| `articles/` | 114 İngilizce makale |
+| `tools/ac_miner_exotic.py` + `data/longtail-queries-exotic.txt` | Egzotik hayvan + fermente madencisi, 2.183 soru |
+| `articles/` | 137 İngilizce makale |
 
 ## Makaleler
 
@@ -65,9 +66,11 @@
 
 101–114: **Tur 4 "olur mu?" soruları** (polymer clay, bread machine yeast, ginger bug bread, cold brew warm, pellet cat litter, leopard gecko ×2, aquarium snails ×2, budgies alone, quail eggs, pellet stove 24/7, orchid soak, hydrangea cuttings)
 
+115–137: **Tur 5 egzotik hayvan + niş fermente** (60 sorgudan 27 LOW, en iyi tur): sürüngen, eklembacaklı, ördek/kaz/silkie, papağan türleri, tepache, kvass, fire cider, tallow, ghee
+
 ⚠️ Denetim notu: 31–54 arasındaki marka/ürün yazılarının çoğunun rekabeti sonradan yüksek çıktı. Ayrıntı `research/low-competition-2026-09.md` bölüm 7'de.
 
-4–114 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
+4–137 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
 
 Taslaklardaki `[ADD: ...]` yerleri senin gerçek deneme sonuçların ve ekran görüntülerinle doldurulmalı.
 Bu kısım bilerek boş: yazıyı Google'da sıralatan ve insan yazmış gibi hissettiren şey tam olarak o.

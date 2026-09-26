@@ -116,3 +116,12 @@ En güçlü sinyal: büyük sitelerin **sorunun tersini** cevaplaması. Örnekle
 
 **Gözlem:** Bitki sorularının çoğu HIGH çıktı (Gardening Know How, Gardener's Path ve üniversite yayın siteleri güçlü). En iyi alanlar sırayla: egzotik hayvanlar > fermente/mutfak ikameleri > soba/ev ekipmanı > el işi.
 **Sınırda (MEDIUM):** pond fish dog food · isopods + millipedes · bat houses spacing · hermit crab in fish tank · winter white hamsters together · beehive in fall · bird feeders at apartments · candle eggs with flashlight · fiddle leaf fig fruit · forage mushrooms state parks · sea glass collecting legality · milk kefir in fridge (bitmiş içecek açısı) · raw tempeh · crochet blanket cut in half · embroidery normal thread
+
+## Tur 5 (egzotik hayvan + fermente; `tools/ac_miner_exotic.py`, `data/longtail-queries-exotic.txt`, 2.183 soru)
+
+**60 sorgudan 27 LOW**, bugüne kadarki en iyi tur. Egzotik hayvan (özellikle kanatlı: ördek yavrusu, kaz, silkie) ve niş fermente (tepache, kvass, fire cider, tallow, ghee) alanları neredeyse tamamen forum ve JustAnswer ile dolu.
+
+Yazılanlar (115–137): jumping spider on back · hognose twitching · corn snake grey · uromastyx mouth open · box turtle in water · gargoyle gecko upside down · millipedes dying · ducklings sneeze · silkie panting · geese pant · ducklings eat poop · conure naps · geese drool · duckling neck swollen · pigeon attacking · lovebird regurgitate · tepache slimy · tepache not fizzy · grainy whipped tallow · ghee parmesan smell · beet kvass slimy · fire cider cloudy · sourdough pancakes gummy
+
+**LOW ama yazılmadı (talep küçük / cevap kutusu riski):** hognose miss strike · jumping spider no web · ghee not solidifying in winter · canary flapping wings
+**Sınırda (MEDIUM, denenebilir):** skink glass surfing · pacman frog deflated · corn snake tail rattle · crested gecko slow motion · conure green poop · zebra finch losing feathers · pet mice squeaking (evcil hayvan açısı) · kefir smells like cheese · fire cider solids
