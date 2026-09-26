@@ -11,7 +11,7 @@
 | `method/human-writing-guide.md` | AI izlerini silme rehberi, yasaklı kelimeler, yayın öncesi kontrol listesi |
 | `templates/draft-prompt.md` | Taslak ve düzeltme için hazır prompt |
 | `research/idea-bank.md` | 40 orijinal başlık, kategori ve yayın sırasıyla |
-| `articles/` | 10 İngilizce makale |
+| `articles/` | 20 İngilizce makale |
 
 ## Makaleler
 
@@ -26,7 +26,18 @@
 9. **The AI Subscription Audit** — fiyat notu hariç hazır
 10. **Gemini Call for Me** — güncel, 1 kontrol notu var
 
-4–10 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
+11. **Sora's API Is Gone** — haber, geliştirici kitlesi
+12. **The 'Ban Superintelligence' Bill, Explained** — haber
+13. **How to Explain AI Scams to Your Parents** — güvenlik serisi
+14. **Just Got Scammed? What to Do in the First Hour** — güvenlik serisi
+15. **What Is Prompt Injection?** — açıklayıcı
+16. **Can Teachers Tell If You Used AI?** — öğrenci sezonu
+17. **Will AI Replace Translators?** — meslek serisi #1
+18. **Your AI Chats Aren't as Private as You Think** — gizlilik
+19. **5 Custom Instructions Worth Copying** — kopyala-yapıştır
+20. **Google Answers Everything. Why Do Blogs Still Exist?** — görüş
+
+4–20 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
 
 Taslaklardaki `[ADD: ...]` yerleri senin gerçek deneme sonuçların ve ekran görüntülerinle doldurulmalı.
 Bu kısım bilerek boş: yazıyı Google'da sıralatan ve insan yazmış gibi hissettiren şey tam olarak o.
