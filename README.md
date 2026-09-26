@@ -13,7 +13,9 @@
 | `research/idea-bank.md` | 40 orijinal başlık, kategori ve yayın sırasıyla |
 | `research/trend-radar-2026-09.md` | Eylül 2026 trend radarı: yeni AI ürünleri, yeni terimler, cihazlar, para/sağlık, markalar (~60 konu, kaynaklı) |
 | `research/low-competition-2026-09.md` | Az rekabetli konular: Google rekabet testi, forum soruları, Product Hunt, GitHub/HN, Exploding Topics (~90 konu) |
-| `articles/` | 54 İngilizce makale |
+| `research/niche-autocomplete-2026-09.md` | **Markasız niş yöntem**: Google otomatik tamamlama + rekabet testi |
+| `tools/ac_miner.py` + `data/longtail-queries.txt` | Konu madencisi ve 7.728 gerçek, markasız soru |
+| `articles/` | 69 İngilizce makale |
 
 ## Makaleler
 
@@ -54,7 +56,11 @@
 
 45–54: **Product Hunt / GitHub / trend terimleri** (Voiskey vs MosMos vs Loqua, Zella, ToneBird, world model / PixVerse R2, Human Atlas, Spotifast, Fugleramme, Remember November 2026 meme, Jimothy raccoon, run club friends)
 
-4–54 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
+55–69: **Markasız niş sorular** (Google önerisi = talep var, rekabet testi = LOW): hummingbird feeder, guinea pig kış bakımı, rabbit, dog bath, leopard gecko, coffee grounds, snake plant, hoya, fiddle leaf fig, cast iron, cold brew tea, bread machine, shrimp tank
+
+⚠️ Denetim notu: 31–54 arasındaki marka/ürün yazılarının çoğunun rekabeti sonradan yüksek çıktı. Ayrıntı `research/low-competition-2026-09.md` bölüm 7'de.
+
+4–69 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
 
 Taslaklardaki `[ADD: ...]` yerleri senin gerçek deneme sonuçların ve ekran görüntülerinle doldurulmalı.
 Bu kısım bilerek boş: yazıyı Google'da sıralatan ve insan yazmış gibi hissettiren şey tam olarak o.

@@ -132,3 +132,17 @@ Kaynak: [PH Eylül lider tablosu](https://www.producthunt.com/leaderboard/monthl
 | Higgsfield AI | +8,400%, Bloomberg: yıllık $1B gelir hızı | MED |
 
 Kaynaklar: [Exploding Topics TikTok](https://explodingtopics.com/blog/tiktok-trends), [Exploding Topics ürünler](https://explodingtopics.com/product-topics), [Google touch-grass trends](https://blog.google/products-and-platforms/products/search/touch-grass-trends/), [Know Your Meme](https://knowyourmeme.com/memes/remember-november-2026-is-coming)
+
+## 7. ⚠️ Denetim (26 Eyl, ikinci kontrol): önceki puanlar fazla iyimserdi
+
+Yazılan 24 makalenin hedef aramaları bağımsız olarak yeniden test edildi. Sonuç:
+
+| Durum | Makaleler |
+|---|---|
+| ✅ **Gerçekten güçlü** (düşük rekabet + talep var) | 38 watchOS 27 Siri timer · 54 run club friends |
+| 🟡 **Orta, yine de denenebilir** | 31 Pinterest Restyle (resmî yardım sayfası çıkana kadar) · 36 ghostlighting (talep belirsiz) · 41 Astra/Sol/Luna (hızla kalabalıklaşıyor) · 33 Microduck · 32 YouTube feeds (sadece "prompt listesi" açısı boş) |
+| 🔴 **Büyük site / resmî sayfa kapatmış** | 34 Bonsai 2 · 35 Clementine · 37 agent washing (Forbes) · 39 Siri AI not working · 40 why can't I get Siri AI · 42 Spotify Taste Profile · 43 Health Guardian · 44 Motion Assist · 48 world model · 52 November meme · 53 Jimothy |
+| ⚫ **Rekabet düşük ama talep neredeyse sıfır** | 45 Voiskey vs Wispr · 46 Zella · 47 ToneBird (aramalarda gitar penası çıkıyor) · 50 Spotifast · 51 Fugleramme |
+| ⚫ **Yanlış arama niyeti** | 49 Human Atlas (aramada kullanıcılar uygulama mağazası arıyor) |
+
+**Ders:** "Rekabet düşük" tek başına yetmez. **Talep kanıtı** da gerekiyor: forumda çok sayıda "me too" / cevap, Reddit başlıkları, Google otomatik tamamlamada görünmesi. 🔴 yazıları silme; blogda iç link ve konu otoritesi için işe yararlar, ama trafik beklentini düşük tut.
