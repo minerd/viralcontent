@@ -62,5 +62,5 @@ Tamamlananlar ✅ = `articles/` klasöründe hazır.
 ## Hangi sırayla?
 1. 🔥 haberleri **haber çıktıktan sonraki 48 saat içinde** yayınla (34, 11, 37).
 2. 😨 güvenlik yazıları sosyal medyada (Facebook, WhatsApp grupları, Reddit) en çok paylaşılan tür → 2, 3, 4.
-3. ✅ "Will AI replace X" meslek serisi = her biri ayrı uzun kuyruk trafiği + birbirine iç link.
-4. ✅ 🧠 görüş yazıları ayda 1–2 tane: Hacker News / Reddit'te tartışma başlatır, backlink getirir.
+3. "Will AI replace X" meslek serisi = her biri ayrı uzun kuyruk trafiği + birbirine iç link.
+4. 🧠 görüş yazıları ayda 1–2 tane: Hacker News / Reddit'te tartışma başlatır, backlink getirir.
