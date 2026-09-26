@@ -16,7 +16,7 @@
 | `research/niche-autocomplete-2026-09.md` | **Markasız niş yöntem**: Google otomatik tamamlama + rekabet testi |
 | `tools/ac_miner.py` + `data/longtail-queries.txt` | Konu madencisi ve 7.728 gerçek, markasız soru |
 | `tools/ac_miner_rare.py` + `data/longtail-queries-rare.txt` | Nadir hobiler için madenci ve 3.982 soru |
-| `articles/` | 100 İngilizce makale |
+| `articles/` | 114 İngilizce makale |
 
 ## Makaleler
 
@@ -63,9 +63,11 @@
 
 86–100: **Tur 3 nadir sorular** (milk soap ammonia, trail camera, film camera, quail, hummingbird nectar, guinea pig cough, cockatiel hiss, goat swelling, dog winter panting, water kefir, kimchi garlic, lavender, cold brew ×2)
 
+101–114: **Tur 4 "olur mu?" soruları** (polymer clay, bread machine yeast, ginger bug bread, cold brew warm, pellet cat litter, leopard gecko ×2, aquarium snails ×2, budgies alone, quail eggs, pellet stove 24/7, orchid soak, hydrangea cuttings)
+
 ⚠️ Denetim notu: 31–54 arasındaki marka/ürün yazılarının çoğunun rekabeti sonradan yüksek çıktı. Ayrıntı `research/low-competition-2026-09.md` bölüm 7'de.
 
-4–100 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
+4–114 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
 
 Taslaklardaki `[ADD: ...]` yerleri senin gerçek deneme sonuçların ve ekran görüntülerinle doldurulmalı.
 Bu kısım bilerek boş: yazıyı Google'da sıralatan ve insan yazmış gibi hissettiren şey tam olarak o.

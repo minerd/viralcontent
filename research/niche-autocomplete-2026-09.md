@@ -94,3 +94,25 @@ En güçlü sinyal: büyük sitelerin **sorunun tersini** cevaplaması. Örnekle
 | why does my cold brew taste like cigarettes | ✅ 100 |
 
 **Sınırda (MEDIUM):** quail crowing at night · pond fish swimming upside down · how to fix hard air dry clay · tufted rugs tufts out · fountain pen not working after refill · trail camera pictures of nothing · well water black suddenly · sauerkraut smells like alcohol · kombucha scoby thin · pour over coffee acidic (mevcut sayfalar kimyayı yanlış anlatıyor) · amaryllis bulb not sprouting · guinea pig bite me softly · parakeet suddenly biting
+
+## Tur 4 ("can you / is it ok" soruları, 60 sorgu, 13 LOW + 1 sınırda)
+
+| Sorgu | Makale |
+|---|---|
+| can you cut polymer clay after baking | ✅ 101 |
+| can you use bread machine yeast for pizza dough | ✅ 102 |
+| can you use ginger bug to make bread | ✅ 103 |
+| is it ok if cold brew gets warm | ✅ 104 |
+| can you use wood stove pellets for cat litter | ✅ 105 |
+| can you handle leopard gecko after feeding | ✅ 106 |
+| should i feed my leopard gecko after shedding | ✅ 107 |
+| can you flush aquarium snails down the toilet | ✅ 108 |
+| can you leave budgies alone for a week | ✅ 109 |
+| can you put aquarium snails in a pond | ✅ 110 |
+| can you eat quail eggs after expiration date | ✅ 111 |
+| is it ok for pellet stove to run all the time | ✅ 112 |
+| can you soak orchids in water overnight | ✅ 113 |
+| can you take hydrangea cuttings in winter | ✅ 114 (sınırda) |
+
+**Gözlem:** Bitki sorularının çoğu HIGH çıktı (Gardening Know How, Gardener's Path ve üniversite yayın siteleri güçlü). En iyi alanlar sırayla: egzotik hayvanlar > fermente/mutfak ikameleri > soba/ev ekipmanı > el işi.
+**Sınırda (MEDIUM):** pond fish dog food · isopods + millipedes · bat houses spacing · hermit crab in fish tank · winter white hamsters together · beehive in fall · bird feeders at apartments · candle eggs with flashlight · fiddle leaf fig fruit · forage mushrooms state parks · sea glass collecting legality · milk kefir in fridge (bitmiş içecek açısı) · raw tempeh · crochet blanket cut in half · embroidery normal thread
