@@ -72,3 +72,25 @@ En güçlü sinyal: büyük sitelerin **sorunun tersini** cevaplaması. Örnekle
 | why is my ducks pool water red · why does my bird bath have a hole in it | LOW ama talep çok küçük |
 
 **Sınırda:** can you punch needle with embroidery floss · can you wet felt after needle felting · is it normal for goats to pant · amaryllis bulb turning red (kırmızı kabuk normal olabilir açısı) · string of hearts flowering · bat circling house (manevi anlam açısı)
+
+## Tur 3 (60 sorgu, 15 LOW)
+
+| Sorgu | Makale |
+|---|---|
+| why does my soap smell like ammonia | ✅ 86 |
+| why does my trail camera keep shutting off | ✅ 87 |
+| why did my film camera rewind early | ✅ 88 |
+| why does my film camera say s | ✅ 89 |
+| why does my quail sound like a frog | ✅ 90 |
+| why does my hummingbird feeder smell like vinegar | ✅ 91 (sonuçlar ters soruyu cevaplıyor: "vinegar ile temizleme") |
+| why is my guinea pig coughing when eating | ✅ 92 |
+| why does my cockatiel hiss at me | ✅ 93 |
+| why does my goats face look swollen | ✅ 94 (veteriner konusu, dikkatli yazıldı) |
+| why is my dog panting so much in winter | ✅ 95 (en riskli LOW: güçlü genel sayfalar var) |
+| why does my water kefir smell like vomit | ✅ 96 |
+| how to fix kimchi too much garlic | ✅ 97 |
+| why is my lavender plant drooping after repotting | ✅ 98 |
+| why does my cold brew taste like alcohol | ✅ 99 |
+| why does my cold brew taste like cigarettes | ✅ 100 |
+
+**Sınırda (MEDIUM):** quail crowing at night · pond fish swimming upside down · how to fix hard air dry clay · tufted rugs tufts out · fountain pen not working after refill · trail camera pictures of nothing · well water black suddenly · sauerkraut smells like alcohol · kombucha scoby thin · pour over coffee acidic (mevcut sayfalar kimyayı yanlış anlatıyor) · amaryllis bulb not sprouting · guinea pig bite me softly · parakeet suddenly biting
