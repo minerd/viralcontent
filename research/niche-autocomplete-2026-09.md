@@ -125,3 +125,13 @@ Yazılanlar (115–137): jumping spider on back · hognose twitching · corn sna
 
 **LOW ama yazılmadı (talep küçük / cevap kutusu riski):** hognose miss strike · jumping spider no web · ghee not solidifying in winter · canary flapping wings
 **Sınırda (MEDIUM, denenebilir):** skink glass surfing · pacman frog deflated · corn snake tail rattle · crested gecko slow motion · conure green poop · zebra finch losing feathers · pet mice squeaking (evcil hayvan açısı) · kefir smells like cheese · fire cider solids
+
+## Tur 6 (derin egzotik + süt ürünü/içki; `tools/ac_miner_deep.py`, `data/longtail-queries-deep.txt`, 1.725 soru)
+
+Not: Bu turda alt ajan aracı hata verdi, rekabet testi doğrudan WebSearch ile 30 sorgu üzerinde yapıldı → **16 LOW**.
+
+**Gözlem:** Ev yapımı süt ürünleri (buttermilk, crème fraîche, mozzarella, ricotta) büyük yemek sitelerince (Tasting Table, Takeout, Nigella, ATK) kapatılmış → HIGH/MEDIUM. Ama **ev yapımı içki (mead, sake)** ve **egzotik hayvan davranışları** hâlâ tamamen forumlarda.
+
+Yazılanlar (138–153): White's tree frog purple · king snake tail shaking · russian tortoise hiss · veiled chameleon digging · tegu heavy breathing · button quail growling · guinea fowl limping · mead rubbing alcohol · sake vinegar · mead rotten eggs · cockatoo sneezing (sonuçlar cockatiel hakkında → niyet boşluğu) · russian tortoise skin peeling · green anole black · feeder hornworms green (sonuçlar bahçe zararlısı hakkında → niyet boşluğu) · mead bubbling over · superworms turning black
+
+**HIGH/MEDIUM (atlandı):** buttermilk separating · creme fraiche split · mozzarella creamy · ricotta dry · homemade wine vinegary · african grey puff up · pygmy goat coughing · springtail culture died · bioactive terrarium smell · axolotl swimming to top · dubia roaches not moving · guinea fowl winter · mini pig grinding teeth
