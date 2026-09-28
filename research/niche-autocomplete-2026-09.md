@@ -135,3 +135,15 @@ Not: Bu turda alt ajan aracı hata verdi, rekabet testi doğrudan WebSearch ile 
 Yazılanlar (138–153): White's tree frog purple · king snake tail shaking · russian tortoise hiss · veiled chameleon digging · tegu heavy breathing · button quail growling · guinea fowl limping · mead rubbing alcohol · sake vinegar · mead rotten eggs · cockatoo sneezing (sonuçlar cockatiel hakkında → niyet boşluğu) · russian tortoise skin peeling · green anole black · feeder hornworms green (sonuçlar bahçe zararlısı hakkında → niyet boşluğu) · mead bubbling over · superworms turning black
 
 **HIGH/MEDIUM (atlandı):** buttermilk separating · creme fraiche split · mozzarella creamy · ricotta dry · homemade wine vinegary · african grey puff up · pygmy goat coughing · springtail culture died · bioactive terrarium smell · axolotl swimming to top · dubia roaches not moving · guinea fowl winter · mini pig grinding teeth
+
+## Tur 7 (60 sorgu, 23 LOW)
+
+**Gözlem:** Kümes hayvanları/su kuşları (kaz, ördek yavrusu, bantam) ve papağan davranışları (conure, lovebird, jako) en verimli alan oldu. Ev yapımı içki/fermantasyon güvenliği sorularında (salsa, sirke, switchel) sonuçlar Quora/forum ağırlıklı.
+
+Yazılanlar (154–175): feeder hornworms turning black · jumping spiders burrow · dubia roaches eating each other · hognose cloudy eyes · tree frogs burrow · bantam chicks dying · geese eating dirt · conure sleeps on back · geese digging holes · ducklings peck each other · conure losing tail feathers · lovebirds sneezing · conure beak peeling · ducklings lay down a lot · african grey clicking (sınırda) · button quail not laying (sınırda) · mead sediment · sick from fermented salsa · mead after 2 weeks · too much switchel · botulism homemade vinegar · churn butter too long
+
+Atlandı (LOW ama tarif sayfaları dolaylı cevaplıyor): ferment carrots and onions together
+
+**MEDIUM (sonraki tura aday):** red eared sliders eating poop · dubia and crickets together · rosy boas together · fermented carrots slimy · sugar in lacto pickles · kvass beets eaten · shio koji raw · tallow separating · skyr separating · sake sediment · fire cider garlic blue · drinking whey · fermented honey garlic cooking · feeder crickets chirping/eating each other · praying mantis upside down · canaries sleep during day · pet rats scratching · ducklings losing feathers · geese honking at night · guinea fowl chasing / eggs not hatching · alpacas lay down · rabbits sleep in litter box
+
+**HIGH (atlandı):** dubia turning white · crested gecko eat shed · pacman frog burying · RES sleep underwater · axolotl shed · bioactive mold · green anoles together · pet rat licks · ginger in beet kvass · ghee turn white · yogurt 24 hours · crested gecko sleep on ground · springtails with tarantulas
