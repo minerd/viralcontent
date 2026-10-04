@@ -21,8 +21,9 @@
 | `tools/ac_miner_round8.py` + `data/longtail-queries-round8.txt` | Küçük memeli/kafes kuşu, akvaryum, koji-miso, el işi madencisi, 2.762 soru |
 | `tools/ac_miner_round9.py` + `data/longtail-queries-round9.txt` | Kümes yavrusu, az tutulan papağan, akvaryum süreç, fermente madencisi, 2.046 soru |
 | `tools/ac_miner_tech.py` + `data/longtail-queries-tech.txt` | **Teknoloji madencisi**: marka filtresi yok, şekil filtresi var (hata/arıza/kayıp), 4.976 sorgu |
+| `tools/ac_miner_tech2.py` + `data/longtail-queries-tech2.txt` | **Self-hosted/homelab madencisi** (en verimli seam), 2.653 sorgu |
 | `research/tech-longtail-2026-10.md` | **"Neden hit alamıyoruz"**: tech'te haber yazmanın neden kaybettiği, işe yarayan 3 sorgu şekli, 25 sorgu test sonucu |
-| `articles/` | 216 İngilizce makale |
+| `articles/` | 233 İngilizce makale |
 
 ## Makaleler
 
@@ -82,9 +83,13 @@
 
 206–216 **Tur 9 teknoloji** — üç kazanan şekil: **sürüm+belirti** (iOS 27 klavye gecikmesi, iOS 27 renkli ikon takılması, Excel Mac'te Copilot yok), **niyet boşluğu** (ChatGPT ile çok sayfa PDF, iOS 27 Photos albümleri, ChatGPT projects kayboldu), **GitHub-only self-hosted** (Home Assistant iOS 27 yavaşlığı, Jellyfin HDR tone mapping, Proxmox kernel sonrası VM, Pi-hole engellemiyor, Frigate Coral görünmüyor). Makale 21 de güncellendi (Apple Pay/Wallet dalgası + panic-full log).
 
+217–233 **Tur 10 — tamamı teknoloji** (22 sorgu → 17 LOW, **%77**). Neredeyse tamamı "GitHub-only" seam'inden: Nextcloud iOS auto upload + Cloudflare tunnel, LM Studio (staff picks hatası, model unload), Cursor extension hatası, AirPods Pro 3 + Teams mikrofon, Synology SMB, Zigbee2MQTT, Paperless-ngx, TrueNAS, Grafana, Unraid, ESPHome, Audiobookshelf, authentik, AdGuard Home, Vaultwarden.
+
+**Tur 10'un kuralı — tekrar üretilebilirlik testi:** "Bir içerik çiftliği yazarı bu sorunu kendi makinesinde üretebilir mi?" Evet ise (Ollama kur, iOS güncelle) rekabet var. Hayır ise (16 cihazlı Zigbee ağı, upgrade edilmiş authentik, Coral TPU'lu Frigate) senin alanın. `ollama not using gpu` → 8 dedike sayfa. `authentik login loop after upgrade` → sıfır makale.
+
 ⚠️ Denetim notu: 31–54 arasındaki marka/ürün yazılarının çoğunun rekabeti sonradan yüksek çıktı. Ayrıntı `research/low-competition-2026-09.md` bölüm 7'de. **Neden** yüksek çıktığı Tur 9'da ölçüldü: bir AI/tech haberi 24–72 saatte hem büyük yayıncılar hem içerik çiftlikleri tarafından kapatılıyor. Tech yazarken haber değil **sürüm+belirti / niyet boşluğu / GitHub-only** şekillerini kullan — `research/tech-longtail-2026-10.md`.
 
-4–216 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
+4–233 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
 
 Taslaklardaki `[ADD: ...]` yerleri senin gerçek deneme sonuçların ve ekran görüntülerinle doldurulmalı.
 Bu kısım bilerek boş: yazıyı Google'da sıralatan ve insan yazmış gibi hissettiren şey tam olarak o.

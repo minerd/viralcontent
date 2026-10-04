@@ -90,3 +90,93 @@ Niş madencilerden iki farkı var:
 **25 sorgu test edildi → 11 LOW → 11 makale (206–216) + makale 21 güncellendi.**
 
 Oran %44 — niş turlarının (%35–40) üzerinde. Yani doğru şekil seçilirse teknoloji, hayvan/fermente nişlerinden **daha** verimli. Yanlış şekil seçilirse (haber/açıklayıcı) oran sıfır.
+
+---
+
+# Tur 10: tamamı teknoloji (22 sorgu → 17 LOW, %77)
+
+Tur 9'un bulgusu test edildi ve doğrulandı: **kanıtlanmış seam'de balık tutarsan oran üçe katlanıyor.** Tur 9'da 25 sorgudan 11 LOW (%44) çıkmıştı, çünkü karışık test ediyordum. Tur 10'da sadece Şekil C ağırlıklı test edildi → **17/22 (%77)**.
+
+## Yeni madenci
+
+```bash
+python3 tools/ac_miner_tech2.py data/longtail-queries-tech2.txt
+```
+
+Ürün listesi tamamen self-hosted/homelab/dev araçlarına çevrildi (Jellyfin, Immich, Paperless, Sonarr, Zigbee2MQTT, ESPHome, Proxmox, TrueNAS, Unraid, Authentik, Vaultwarden, Grafana, Caddy, Traefik, k3s, Cursor, LM Studio, Ollama…). Stem'ler de arıza şekline odaklandı: `not detected`, `permission denied`, `fails to start`, `stuck on`, `high cpu`, `out of memory`, `where did`.
+
+Çıktı: **5.712 öneri → 2.653 problem-şekilli** (`data/longtail-queries-tech2.txt`). Tech madencilerinin toplamı artık **7.629 test edilmemiş sorgu**.
+
+## Yazılanlar (217–233)
+
+| Sorgu | SERP'te ne var | Makale |
+|---|---|---|
+| nextcloud auto upload not working iphone | GitHub issues + help.nextcloud | ✅ 217 |
+| lm studio error fetching staff picks | **1 GitHub issue**, kalanı alakasız (Wikipedia, Etsy, Scratch) | ✅ 218 |
+| airpods pro 3 mic not working teams windows 11 | MS Tech Community + Apple Community + MS Q&A, tek makale yok | ✅ 219 |
+| synology smb not working after dsm update | synology community + synoforum | ✅ 220 |
+| nextcloud with cloudflare tunnel | forumlar + GitHub discussions + 1 Medium | ✅ 221 |
+| lm studio keeps unloading model | GitHub bug-tracker + docs (kimse ikisini birleştirmemiş) | ✅ 222 |
+| cursor error while fetching extensions | **sadece** forum.cursor.com | ✅ 223 |
+| zigbee2mqtt devices unavailable after update | Z2M GitHub + HA community | ✅ 224 |
+| paperless-ngx consumer not picking up files | GitHub discussions + docs | ✅ 225 |
+| truenas scale app stuck deploying | truenas forumları + 1 Medium | ✅ 226 |
+| grafana panel no data after upgrade | Grafana GitHub + community forum | ✅ 227 |
+| unraid array won't start after update | **sadece** unraid forumları | ✅ 228 |
+| esphome encryption key is invalid | HA community + GitHub | ✅ 229 |
+| audiobookshelf progress not syncing | **sadece** GitHub issues | ✅ 230 |
+| authentik login loop after upgrade | **sadece** goauthentik GitHub | ✅ 231 |
+| adguard home dns not responding after update | AdGuardHome GitHub + opnsense forum | ✅ 232 |
+| vaultwarden websocket not working after update | Vaultwarden GitHub discussions + forum | ✅ 233 |
+
+## HIGH çıkanlar — ve ortak özellikleri
+
+| Sorgu | Kim kapatmış |
+|---|---|
+| ollama not using gpu | **8 dedike sayfa**: dev.to, mylocalai, gigagpu, netray, neuralgist, localaimaster, aimadetools, runaihome |
+| copilot missing from outlook ribbon | Microsoft resmi KB + bleepingcomputer ×2 + wisechecker |
+| docker desktop error during wsl startup | windowsreport, koskila, usedocker |
+| copilot keeps asking me to sign in | wisechecker ×2 + windowsreport |
+| synology quickconnect not working | mariushosting, epistechnology, spacerex, dev.to |
+
+**Kalıp net: kurulum bariyeri düştükçe rekabet yükseliyor.**
+
+- `ollama not using gpu` → tek komutla kurulur, milyonlarca kullanıcı → 8 içerik çiftliği
+- `authentik login loop after upgrade` → Docker Compose + PostgreSQL + reverse proxy + OIDC bilgisi gerekir → **sıfır makale**
+
+## Tur 10'un yeni kuralı: tekrar üretilebilirlik testi
+
+Bir sorguyu yazmaya değer mi diye sorarken şunu sor:
+
+> **Bir içerik çiftliği yazarı bu sorunu kendi makinesinde üretebilir mi?**
+
+- **Evet** (Ollama kur, iOS güncelle, Office aç) → rekabet var ya da yarın olacak. Atla.
+- **Hayır** (16 cihazlı bir Zigbee ağı, upgrade edilmiş bir authentik instance'ı, DSM 7'ye geçmiş bir NAS, Coral TPU'lu bir Frigate) → **senin alanın**.
+
+Bu, Tur 9'daki "GitHub-only" sinyalinin nedenini açıklıyor: cevap GitHub issue'sunda, çünkü **sorunu yaşayan tek grup onu yaşayan kullanıcılar** ve kimse pazarlama için o kurulumu yapmıyor.
+
+İkinci gözlem: **AI araçları artık iki parçaya ayrıldı.** Genel AI sorunları (`ollama not using gpu`) doymuş durumda. Ama **tam hata metinleri** (`error fetching staff picks`, `error while fetching extensions`) hâlâ bomboş, çünkü içerik çiftlikleri hata metinlerini bilmiyor — onları ancak araç gerçekten kırıldığında görürsün.
+
+## Yazı kalıbı (217–233'te kullanılan)
+
+1. **Belirtiyi aynen yaz** — kullanıcı o cümleyle arıyor
+2. **Tek satırda kök neden** ("sebep neredeyse her zaman reverse proxy", "bu bir ayar, bug değil")
+3. **Sıralı teşhis** — en ucuz ve en olası adım önce
+4. **Gerçek config/komut blokları** — nginx map bloğu, `proxy-boot-tool kernel pin`, `PAPERLESS_CONSUMER_POLLING`
+5. **"Şunu yapma"** — reinstall, re-flash, re-pair gibi pahalı ve gereksiz adımları kes
+6. **"Bir daha yaşamamak için"** — tag pinleme, YAML yedeği, UID sabitleme
+7. **FAQ** — 4 soru, SERP'teki "people also ask" şekli
+
+Bu kalıp aynı zamanda **otorite sinyali** veriyor: forumdan kopyalanmış bir liste değil, sorunu anlamış bir metin.
+
+## İç bağlantı kümesi
+
+217–233 arası yazıların 11'i "update sonrası bozuldu" şeklinde. Bunları birbirine bağla ve bir **"after an update" hub sayfası** aç: *"Bir güncelleme self-hosted kurulumunu bozduğunda: önce ne kontrol edilir"* (tag pinleme, config yedeği, önceki sürüme dönme, log okuma). Hub, 11 yazıdan link alır ve kendisi de uzun kuyruk toplar.
+
+## Tur 11 için hazır adaylar (test edilmemiş)
+
+`data/longtail-queries-tech2.txt` ve `-tech.txt` içinden, aynı testi geçmeye en yakın olanlar:
+
+immich machine learning container restarting · qbittorrent stalled after update · sonarr import failed after update · caddy certificate error after update · traefik 404 after update · k3s node notready after reboot · portainer agent not connecting · watchtower broke my container · jellyfin intel qsv after driver update · scrypted plugin crash loop · node-red flows missing after update · mosquitto connection refused after update · immich mobile upload stuck · navidrome scan not finding files · restic repository locked · borgbackup lock timeout · duplicati database rebuild stuck · zwave-js-ui devices dead after update · esphome ota failed after update · proxmox backup job failed after upgrade
+
+**Beklenen oran:** %70+. Bu listeyi bitirmek 3–4 tur yeter.
