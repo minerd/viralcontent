@@ -147,3 +147,45 @@ Atlandı (LOW ama tarif sayfaları dolaylı cevaplıyor): ferment carrots and on
 **MEDIUM (sonraki tura aday):** red eared sliders eating poop · dubia and crickets together · rosy boas together · fermented carrots slimy · sugar in lacto pickles · kvass beets eaten · shio koji raw · tallow separating · skyr separating · sake sediment · fire cider garlic blue · drinking whey · fermented honey garlic cooking · feeder crickets chirping/eating each other · praying mantis upside down · canaries sleep during day · pet rats scratching · ducklings losing feathers · geese honking at night · guinea fowl chasing / eggs not hatching · alpacas lay down · rabbits sleep in litter box
 
 **HIGH (atlandı):** dubia turning white · crested gecko eat shed · pacman frog burying · RES sleep underwater · axolotl shed · bioactive mold · green anoles together · pet rat licks · ginger in beet kvass · ghee turn white · yogurt 24 hours · crested gecko sleep on ground · springtails with tarantulas
+
+## Tur 8 (küçük memeli + kafes kuşu + akvaryum + koji/el işi; `tools/ac_miner_round8.py`, `data/longtail-queries-round8.txt`, 2.762 soru)
+
+Yeni alanlar: ferret, kirpi, degu, evcil fare/gerbil, kanarya, zebra/gouldian ispinozu, parrotlet, caique, eclectus, quaker, hindi palazı, peafowl, sülün, mavi dilli skink, leopar/Hermann kaplumbağası, peygamberdevesi, tarantula, imparator akrep, hermit crab, mystery snail, kerevit, betta/japon balığı/lepistes, akvaryum bitkisi, kiraz karidesi, koji/shio koji/miso/tempeh, turşu yumurta/tuzda yumurta sarısı, elma şarabı, kefir sodası/jun, istiridye mantarı/aslan yelesi, microgreen, hidroponik, etobur bitki, solucan gübresi/bokashi, arı kovanı, reçine, taş tamburu, mum, deri boyası, keçe, lino baskı, tufting.
+
+**59 sorgu test edildi → 21 LOW.** Verim Tur 7'nin biraz altında; sebebi net: bu turda test edilen alanların bir kısmı **kendi niş site ekosistemine sahip** (isopods.co.uk, ladygouldianfinch, unclejimswormfarm, tuftingshop, feltingandfiberstudio, carolinahoneybees, microgreenscorner, thehydroponicsplanet…). Buralara girmek anlamsız.
+
+**Doymuş çıkan alanlar (atla):** el işi malzemeleri (lino, keçe, tufting, taş tamburu, deri boyası, mum, reçine) · yetiştirme (microgreen, hidroponik, mantar kiti, solucan kovası, bokashi) · arıcılık · ferret/gerbil/degu/evcil fare · hermit crab ve mystery snail davranışları · betta/japon balığı eşleştirme soruları · ev yapımı yoğurt/labneh/kefir · elma şarabı kusurları (pricklycider + scottlab kapatmış).
+
+**Hâlâ açık olan alanlar:** kümes/su kuşu yavruları (hindi palazı, ördek yavrusu, kaz) · daha az tutulan papağanlar (eclectus, parrotlet, caique, quaker'ın spesifik davranışları) · ispinoz üretimi · akvaryum **kimya/süreç** soruları (karides molt ölümleri, bitki tutturma) · sürüngen renk/deri soruları · **fermente güvenliği ve oran** soruları (botulizm, salamura tekrar kullanımı, alkol kokusu).
+
+Yazılanlar (176–196):
+
+| Sorgu | Not | Makale |
+|---|---|---|
+| why do my geese honk at night | sonuçlar yabani Canada geese hakkında | ✅ 176 |
+| why are my turkey poults fighting | sonuçlar yetişkin/yabani hindi | ✅ 177 |
+| why are my turkey chicks so loud | sadece backyardchickens başlıkları | ✅ 178 |
+| why are my turkey eggs soft | forum + tavuk odaklı sayfalar | ✅ 179 |
+| why does my eclectus grind his beak | sonuçlar sultan papağanı/muhabbet kuşu | ✅ 180 |
+| why is my eclectus regurgitating | JustAnswer + parrotforums | ✅ 181 |
+| why is my parrotlet chirping so much | talkparrotlets başlıkları | ✅ 182 |
+| why do my zebra finches eat their eggs | JustAnswer + akademik makale | ✅ 183 |
+| why are my ducklings losing feathers | sayfalar yetişkin ördek tüy dökümü | ✅ 184 |
+| why do my red eared sliders eat poop | sayfalar "kendi dışkısı" versiyonunu cevaplıyor | ✅ 185 |
+| why is my blue tongue skink belly red | sadece forum + JustAnswer | ✅ 186 |
+| why is my emperor scorpion not eating | tamamen arachnoboards | ✅ 187 |
+| why are my cherry shrimp dying after molting | tamamen akvaryum forumları | ✅ 188 |
+| aquarium plants not staying in substrate | forum başlıkları | ✅ 189 |
+| carnivorous plant smells like rotting meat | sonuçlar titan arum/ceset çiçeği | ✅ 190 |
+| fermented garlic honey smells like alcohol | tarif sayfaları tek cümleyle geçiyor | ✅ 191 |
+| can you eat the beets from beet kvass | tarif sayfalarında tek satır | ✅ 192 |
+| can you leave pickled eggs on the counter | forum + ince içerik çiftliği sayfaları | ✅ 193 |
+| can you reuse lacto fermented pickle brine | sayfalar sirkeli salamurayı cevaplıyor | ✅ 194 |
+| can you make miso with shio koji | sonuçlar "shio koji nasıl yapılır" | ✅ 195 |
+| can you eat oyster mushrooms after they spore | sonuçlar spor toplama hakkında | ✅ 196 |
+
+**MEDIUM (sonraki tura aday):** peahen sesi · leopar kaplumbağası aşırı besleme · zebra ispinozu + sultan papağanı birlikte · mourning dove yerde oturma · mystery snail ters dönme · tempeh soğuk yeme · jun tea gazsız · shio koji çiğ · tuzda yumurta sarısı (sadece tuz) · peygamberdevesi baş aşağı · degu ciyaklama · gerbil yemek saklama
+
+**HIGH (atlandı):** pheasant chicks dying · isopod colony dying · ferret hiccups · gerbils alone after one dies · crayfish molt vs dead · mystery snail eggs moving · gouldian bald · kefir fizzy · bees washboarding · hard cider rotten eggs · worm bin too wet · bokashi smell · microgreens (hepsi) · hydroponic lettuce bitter · carnivorous plant winter feeding · felting needles breaking · tufting gun jamming · leather dye streaky · lino prints patchy · rock tumbler grit · fermented carrots slimy · sugar in lacto pickles · dubia + crickets · rat scratching · rabbit litter box · fire cider blue garlic · garlic honey cooking · feeder crickets cannibalism · canary sleeping daytime · hermit crab chirping/hair · hermann tortoise squeak/pacing · blue tongue skink peeing · quaker parrot purring
+
+**Yöntem notu:** Tur 8'de en güvenilir LOW sinyali yine **niyet boşluğu** oldu (sorunun yabani/vahşi hayvan, farklı tür ya da farklı süreç versiyonunun cevaplanması: kaz, hindi palazı, eclectus, ördek yavrusu, kaplumbağa, etobur bitki, shio koji, istiridye mantarı sporu). İkinci sinyal: **tamamen forum** (akrep, karides, akvaryum bitkisi). Marka/ürün ve "kendi niş sitesi olan hobi" alanlarından uzak dur.

@@ -18,7 +18,8 @@
 | `tools/ac_miner_rare.py` + `data/longtail-queries-rare.txt` | Nadir hobiler için madenci ve 3.982 soru |
 | `tools/ac_miner_exotic.py` + `data/longtail-queries-exotic.txt` | Egzotik hayvan + fermente madencisi, 2.183 soru |
 | `tools/ac_miner_deep.py` + `data/longtail-queries-deep.txt` | Derin egzotik + süt/içki madencisi, 1.725 soru |
-| `articles/` | 175 İngilizce makale |
+| `tools/ac_miner_round8.py` + `data/longtail-queries-round8.txt` | Küçük memeli/kafes kuşu, akvaryum, koji-miso, el işi madencisi, 2.762 soru |
+| `articles/` | 196 İngilizce makale |
 
 ## Makaleler
 
@@ -72,9 +73,11 @@
 138–153: **Tur 6 derin egzotik + ev yapımı içki** (ağaç kurbağası, kral yılanı, Rus kaplumbağası ×2, bukalemun, tegu, anole, button quail, beç tavuğu, kakadu, yem böcekleri ×2, mead ×3, sake)
 154–175: **Tur 7 kümes/su kuşu, papağan, yem böcekleri, ev yapımı içki** (hornworm, zıplayan örümcek, dubia, hognose, ağaç kurbağası, bantam, kaz ×2, ördek yavrusu ×2, conure ×3, lovebird, jako, button quail, mead ×2, fermente salsa, switchel, sirke/botulizm, tereyağı)
 
+176–196 **Tur 8 kümes kuşu, papağan, akvaryum/sürüngen, fermente güvenliği** (kaz gece sesi, hindi palazı ×3, eclectus ×2, parrotlet, zebra ispinozu, ördek yavrusu tüy, kırmızı yanaklı kaplumbağa, mavi dilli skink, imparator akrep, kiraz karidesi, akvaryum bitkisi, etobur bitki kokusu, sarımsaklı bal, pancar kvası, turşu yumurta, laktofermente salamura, shio koji/miso, istiridye mantarı)
+
 ⚠️ Denetim notu: 31–54 arasındaki marka/ürün yazılarının çoğunun rekabeti sonradan yüksek çıktı. Ayrıntı `research/low-competition-2026-09.md` bölüm 7'de.
 
-4–175 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
+4–196 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
 
 Taslaklardaki `[ADD: ...]` yerleri senin gerçek deneme sonuçların ve ekran görüntülerinle doldurulmalı.
 Bu kısım bilerek boş: yazıyı Google'da sıralatan ve insan yazmış gibi hissettiren şey tam olarak o.
