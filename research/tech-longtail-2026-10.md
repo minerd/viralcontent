@@ -250,3 +250,68 @@ Sayfa 26 yazıya link veriyor; küme hem iç bağlantı hem de "update sonrası"
 Aynı testi geçmeye en yakın, henüz denenmemiş olanlar (tek geliştirici + donanım + issue tracker kriterine uyanlar):
 
 mealie recipe import failing · homebridge child bridge not responding · zwavejs2mqtt ozw migration · wyoming satellite not detected · piper tts not working after update · whisper addon slow after update · double-take not detecting · motioneye camera offline after update · shinobi stream not loading · octoprint serial connection failed after update · klipper mcu error after firmware update · moonraker database locked · home assistant recorder database corrupt after update · esphome bluetooth proxy stopped working · music assistant player unavailable · plex meta manager failing · tdarr node not connecting · stash scan not finding scenes · romm library empty after update · gotify notifications stopped after update
+
+---
+
+# Tur 12: 50 makale tek turda (72 sorgu → 52 LOW, %72)
+
+Hedef açıkça 50 yayınlanabilir makaleydi. Tur 10–11'de daraltılan kriter (tek geliştirici projesi + donanıma bağlı + cevabı issue tracker'da) doğrudan uygulandı; test edilen 72 sorgudan **52'si LOW**, bunların **50'si yazıldı** (247–296).
+
+## Oranın neden bu kadar yüksek olduğu
+
+Tur 9'da %44, Tur 10'da %77, Tur 11'de %67, Tur 12'de %72. Fark tamamen **aday seçiminde**. Bu turda test edilen her sorgu şu üç kutuyu işaretliyordu:
+
+1. Yazılım **tek kişi veya küçük bir ekip** tarafından geliştiriliyor (Immich, Frigate, ESPHome, Scrypted, Mealie, Beszel, Vikunja, Stash, Kavita…)
+2. Sorun **belirli donanım veya belirli bir kurulum** gerektiriyor (Coral TPU, Zigbee koordinatörü, ESP32, Z-Wave stick, 3D yazıcı, kamera, NAS)
+3. Cevap **GitHub issue / proje forumu** içinde gömülü, makaleye çevrilmemiş
+
+Bazılarının SERP'inde **tek bir makale yok**: Immich ML container, Immich mobil upload, Scrypted crash loop, Stash scan, Pterodactyl console, Mealie import, Moonraker "database is locked" (sonuçlar Oracle ve IBM dokümantasyonu!), Tdarr node (IBM/Oracle), LM Studio staff picks (Wikipedia/Etsy/Scratch).
+
+## HIGH/MEDIUM çıkanlar ve nedenleri (Tur 11'in kuralını doğruluyor)
+
+| Sorgu | Kim kapatmış | Hangi istisna |
+|---|---|---|
+| ollama not using gpu | 8 dedike sayfa | Kurulum bariyeri düşük (tek komut) |
+| shelly device offline after firmware | smarthomemend ×2, trunetto | Tüketici markası |
+| unifi device stuck adopting | hostifi, lazyadmin, gurunetid, randomadult | Kurumsal + tüketici kesişimi |
+| zigbee2mqtt coordinator not responding | **Z2M'in kendi dokümantasyonunda dedike sayfa** | İyi resmi dokümantasyon |
+| jellyfin plugin catalog | lumadock + wp301redirects | Kurulum bariyeri düşük |
+| prowlarr indexer sync | techgeeks + flaresolverr | "*arr" ekosistemi rehber yazarlarını çekiyor |
+| matter device won't pair | selorahomes + trunetto | Tüketici smart-home |
+| restic repository locked | homelabfix | Tek kişilik homelab blogu |
+| qbittorrent stalled | makeuseof | Tüketici ölçeği |
+| k3s node notready | 3 Medium + drdroid + groundcover | Kurumsal ilgi |
+
+**Operasyonel kural:** aday listesi yaparken ürünü değil **kitleyi** düşün. "Bunu kuran kaç kişi var ve kaçı blog yazarı?" Oran ne kadar küçükse seam o kadar temiz.
+
+## Yazılan 50 makale
+
+**Home Assistant & otomasyon (13):** homebridge child bridge · HA recorder corrupt · HA MariaDB migration · HA backup failed · HA InfluxDB · ESPHome BT proxy · Wyoming satellite · Music Assistant · Tasmota MQTT · WLED Wi-Fi · Grocy barkod · Zigbee/Z-Wave ilgili çapraz bağlantılar · Mosquitto (Tur 11)
+
+**Kamera/NVR (4):** Frigate recordings · Frigate go2rtc · Frigate semantic search · motionEye
+
+**Medya ve kütüphane (12):** Jellyfin trickplay · Sonarr import · Bazarr · Jellyseerr · Kometa · Tautulli · Tdarr · Kavita · Stash · Calibre-Web · Audiobookshelf podcast + Android Auto · qBittorrent/Gluetun
+
+**Foto/doküman (6):** Immich ML · Immich duplicates · Immich mobil upload · Paperless OCR · Nextcloud notify_push · Collabora
+
+**Ağ/DNS (4):** Pi-hole v6 · OPNsense Unbound · OpenWrt sysupgrade · Jitsi
+
+**Dev/platform (8):** Gitea/Forgejo hooks · Wiki.js · Pterodactyl · Beszel · Uptime Kuma · Gotify · ntfy · Vikunja · Firefly III · Syncthing · Duplicati
+
+**3D baskı (3):** Moonraker · OctoPrint serial · OctoPrint plugin
+
+**Diğer (2):** Mealie · LM Studio (Tur 10'dan devam)
+
+Hepsi **246 numaralı hub sayfasına** bağlandı; hub artık 70'ten fazla yazıya link veriyor ve kümenin giriş kapısı.
+
+## Henüz test edilmemiş, aynı kriteri geçen adaylar
+
+klipper input shaper verisi okunmuyor · bambu/prusa connect bağlantısı · romm library empty · komodo/dockge deploy hatası · semaphore ansible job · double-take detection · shinobi stream · navidrome scrobble · immich-go upload hatası · zwavejs2mqtt ozw migration · esphome voice PE yanıt vermiyor · home assistant zigbee network stuck · scrypted nvr storage dolu · plex meta manager overlay · tubearchivist indexleme · audiobookshelf match hatası · linkwarden arşivleme · hoarder/karakeep ingest · paperless-ai etiketleme · actual budget sync
+
+**Beklenen oran:** %70+. Bu liste tek başına bir sonraki 20 makaleyi verir.
+
+## Toplam durum (Tur 9–12)
+
+- **Tech yazı:** 206–296 → **91 yazı**
+- **Test edilen tech sorgu:** 137 → **92 LOW (%67)**
+- **Kalan havuz:** 7.629 madenci sorgusu + yukarıdaki 20 el seçimi aday

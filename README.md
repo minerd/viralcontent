@@ -23,7 +23,7 @@
 | `tools/ac_miner_tech.py` + `data/longtail-queries-tech.txt` | **Teknoloji madencisi**: marka filtresi yok, şekil filtresi var (hata/arıza/kayıp), 4.976 sorgu |
 | `tools/ac_miner_tech2.py` + `data/longtail-queries-tech2.txt` | **Self-hosted/homelab madencisi** (en verimli seam), 2.653 sorgu |
 | `research/tech-longtail-2026-10.md` | **"Neden hit alamıyoruz"**: tech'te haber yazmanın neden kaybettiği, işe yarayan 3 sorgu şekli, 25 sorgu test sonucu |
-| `articles/` | 246 İngilizce makale |
+| `articles/` | 296 İngilizce makale |
 
 ## Makaleler
 
@@ -91,9 +91,15 @@
 
 **Tur 11'in kuralı — Şekil C'nin istisnaları:** Bir araç (1) kurumsal/B2B ilgisi görüyorsa (Kubernetes, Portainer → SaaS blogları), (2) resmi dokümantasyonu iyiyse (Navidrome), ya da (3) bir haber döngüsüne girdiyse (Watchtower'ın terk edilmesi) rekabet var. En temiz alan: tek geliştirici projesi + donanıma bağlı + cevap issue tracker'da.
 
+247–296 **Tur 12 — 50 makale, tamamı teknoloji** (72 sorgu → 52 LOW, **%72**). Tur 10–11'in kriteri doğrudan uygulandı: *tek geliştirici projesi + donanıma bağlı + cevabı issue tracker'da.* Bazılarının SERP'inde tek makale bile yok (Immich ML container, Scrypted crash loop, Stash scan, Pterodactyl console, Mealie import; Moonraker "database is locked" aramasında sonuçlar Oracle ve IBM dokümantasyonu çıkıyor).
+
+Alanlar: Home Assistant çekirdeği (recorder, MariaDB migration, backup, InfluxDB), ESPHome/Tasmota/WLED/Zigbee/Z-Wave, Frigate ×3, medya araçları (Sonarr, Bazarr, Jellyseerr, Kometa, Tautulli, Tdarr, Kavita, Stash, Calibre-Web, Audiobookshelf ×2, Jellyfin trickplay), Immich ×3, Paperless, Nextcloud ×2, Pi-hole v6, OPNsense, OpenWrt, Jitsi, Gitea/Forgejo, Wiki.js, Pterodactyl, Beszel, Uptime Kuma, Gotify, ntfy, Vikunja, Firefly III, Syncthing, Duplicati, Moonraker, OctoPrint ×2, Mealie, Grocy, motionEye, Homebridge, Music Assistant, Wyoming satellite, qBittorrent/Gluetun.
+
+**Aday seçme kuralı (Tur 12):** ürünü değil **kitleyi** düşün — "bunu kuran kaç kişi var ve kaçı blog yazarı?" Oran küçükse seam temiz. `ollama not using gpu` → 8 dedike sayfa; `pterodactyl console websocket` → sıfır.
+
 ⚠️ Denetim notu: 31–54 arasındaki marka/ürün yazılarının çoğunun rekabeti sonradan yüksek çıktı. Ayrıntı `research/low-competition-2026-09.md` bölüm 7'de. **Neden** yüksek çıktığı Tur 9'da ölçüldü: bir AI/tech haberi 24–72 saatte hem büyük yayıncılar hem içerik çiftlikleri tarafından kapatılıyor. Tech yazarken haber değil **sürüm+belirti / niyet boşluğu / GitHub-only** şekillerini kullan — `research/tech-longtail-2026-10.md`.
 
-4–246 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
+4–296 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
 
 Taslaklardaki `[ADD: ...]` yerleri senin gerçek deneme sonuçların ve ekran görüntülerinle doldurulmalı.
 Bu kısım bilerek boş: yazıyı Google'da sıralatan ve insan yazmış gibi hissettiren şey tam olarak o.
