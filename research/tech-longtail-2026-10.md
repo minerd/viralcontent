@@ -425,3 +425,109 @@ woodpecker ci clone failed · dockge stack not starting · memos/docmost upload 
 ## Hâlâ ölçülmemiş olan
 
 Bu 141 yazının hiçbiri production'da ölçülmedi. Strateji SERP okumasına dayanıyor, trafik verisine değil. İlk 10–15 yazı yayınlandıktan 4–6 hafta sonra Search Console'daki **impression** (sorgu gerçekten aranıyor mu) ve **ortalama pozisyon** (seam gerçekten açık mıydı) verisine bakmadan bir sonraki 50'yi yazmanın marjinal değeri düşüyor. Öneri: yayınla, ölç, sonra devam et.
+
+---
+
+# Tur 14 — 100 makale (347–446)
+
+**Tarih:** 4 Ekim 2026. **Test:** 142 sorgu canlı SERP'te okundu → **100 LOW (%70)**.
+
+Tur 13'ün %89'undan düşük, ve bu kötü haber değil: Tur 13'te adaylar test edilmeden önce elendi. Burada 100 LOW *bulmak* zorunda olduğum için daha geniş bir havuzu test etmek gerekti, ve havuz genişledikçe oran düşüyor. %70 ham oran, Tur 9–13'ün ortalamasıyla tutarlı.
+
+## Tur 14'ün en değerli çıktısı: nerede rekabet var
+
+100 LOW'dan çok, **42 reddedilen sorgu** öğretici. Reddetme sebepleri net bir harita veriyor:
+
+### Reddedilen kategori 1 — Kurumsal/altyapı konuları
+
+| Sorgu | Rakipler |
+|---|---|
+| unifi device adoption stuck | breadNET, hostifi, unihosted, randomadult, thetechgeeks, alskyline — 6 dedike blog |
+| cloudflared tunnel 502 | oneuptime ×3 + cloudhousetechnologies |
+| keepalived vrrp split brain | devopsil ×2 dedike makale + cubepath + huzairuje |
+| proxmox gpu passthrough code 43 | Forum + blog doygunluğu |
+| restic repository locked | homelabfix dedike sayfa |
+| mergerfs balancing | diymediaserver dedike 2026 kılavuzu |
+| garage s3 cluster layout | stackharbor ×2 + cloudrumble + glukhov |
+| nfs stale file handle (Tur 13) | oneuptime, cyberciti, yomotherboard, simplified.guide |
+
+**Kural:** DevOps/SRE kelime dağarcığına giren her şey (cluster, load balancer, tunnel, passthrough, HA/failover) B2B SaaS bloglarının reklam hedefi. Girme.
+
+### Reddedilen kategori 2 — Resmi dokümantasyonun belirtiyi kapattığı projeler
+
+| Sorgu | Doküman |
+|---|---|
+| cartographer touch calibration | docs.cartographer3d.com/troubleshooting |
+| shinobi stream not loading | docs.shinobi.video/configure/troubleshoot-camera |
+| 2fauth cannot decrypt | docs.2fauth.app/security/data-protection |
+| romm igdb scan | docs.romm.app/troubleshooting/scanning |
+| cross-seed no results | cross-seed.org/docs/basics/faq-troubleshooting |
+| sabnzbd ssl certificate | sabnzbd.org/wiki/advanced/certificate-errors |
+| nut ups usb permission | networkupstools FAQ + ArchWiki |
+| mosquitto bridge not connecting | steves-internet-guide dedike sayfa |
+| ha octopus energy no tariff | bottlecapdave dedike repair sayfası |
+| moonraker obico not connecting | obico.io/docs/user-guides/relink-klipper |
+
+**Kural (Tur 11'in istisnası #2'nin doğrulanması):** Projenin kendi dokümantasyonunda **belirtinin adını taşıyan bir sayfa** varsa, Google o sayfayı ilk sıraya koyar ve senin yazın 8. olur. Aday seçerken projenin docs sitesinde "troubleshooting" araması yap.
+
+### Reddedilen kategori 3 — Tek konuya adanmış "her hata mesajı" siteleri
+
+Yeni bir rakip tipi: bir ürüne odaklanmış, her hata mesajı için bir sayfa üreten siteler.
+
+- `flaresolverr not working` → hproxy.com/blog/flaresolverr-not-working ("Each Error Message and Its Fix")
+- `open webui ollama connection` → insiderllm, markaicode, techjunction
+- `n8n stuck executions` → flowgenius.in ×2
+- `lightburn camera alignment` → zapcraft.net + benchweld.com
+- `feishin playback error` → feishin.net/guide/how-to-fix-common-feishin-errors
+- `zigbee2mqtt linkquality` → xfelix, privatehomelab, botmonster
+
+**Kural:** Bir araç ticari ilgi (Ollama, n8n, LightBurn) ya da büyük bir hobi kitlesi (Zigbee) görüyorsa, biri o ürüne bir mikro-site kurmuş. SERP'te aynı domainin iki sayfası görünüyorsa dur.
+
+## Hâlâ temiz olan alanlar
+
+Tur 14'ün %100 geçiş oranı verdiği iki batch'in ortak noktası:
+
+**Batch 12 (8/8) ve Batch 14 (8/8):** Hepsi **tek geliştiricinin GitHub-only projesi**, kurulu kullanıcı sayısı dört ya da beş haneli, dokümantasyonu README seviyesinde. Miniflux, linkding, listmonk, Maloja, Wizarr, Memos, Kimai, Snipe-IT, Homebox, Peppermint, Wallabag, Owncast, PeerTube, GoToSocial, Mumble, Piwigo, LibrePhotos.
+
+**Hobi donanımı (Batch 10–11, 6/8 ve 5/8):** WeeWX, Snapcast, shairport-sync, Lyrion, Grott, rtl_433, BirdNET-Pi, tar1090, LinuxCNC, MiSTer. Kitlesi küçük, sorunlar fiziksel, cevaplar proje forumunda.
+
+## Tur 14'ün yeni kuralı — "docs troubleshooting" ön kontrolü
+
+Tur 13'ün kitle kuralına ek bir ön filtre: **SERP testinden önce projenin dokümantasyon sitesinde belirtinin adını ara.** 10 saniye sürüyor ve test edilecek aday sayısını yarıya indiriyor:
+
+```
+site:docs.<proje>.<tld> <belirti>
+site:<proje>.<tld> troubleshooting
+```
+
+Sonuç varsa test etme. Bu filtre Tur 14'te 42 reddin 10'unu test etmeden eleyebilirdi.
+
+## İkinci gözlem — reverse proxy hub konusu artık 8 makaleye dayanıyor
+
+Tur 13'te üç makalenin aynı köke indiğini not etmiştim. Tur 14 bunu beşe daha çıkardı: Docmost (websocket upgrade), Pingvin Share (`proxy_request_buffering`), Trilium (`client_max_body_size` + websocket), Kavita OPDS (forward-auth), FreshRSS (`Authorization` header stripping), Memos (aynı header), Healthchecks (`/ping/` forward-auth), Fluidd (websocket + cors).
+
+İki ayrı hub konusu hazır:
+
+1. *"The four nginx defaults that break self-hosted apps"* — `client_max_body_size 1m`, `proxy_buffering on`, `proxy_read_timeout 60s`, eksik websocket upgrade
+2. *"Forward-auth breaks these endpoints: a checklist"* — OPDS feed'leri, `/ping/`, `/api/`, webhook alıcıları, MQTT köprüleri. Hiçbiri interaktif login tamamlayamaz.
+
+İkincisi özellikle değerli: SERP'te hiç karşılığı yok ve self-hosted kuran herkes bir kez yaşıyor.
+
+## Bir sonraki tur için ön-elemeli adaylar
+
+dokploy nixpacks build failed (test edildi, LOW, 100'e sığmadı) · woodpecker ci clone dns · komodo stack env resolution · filebrowser permissions · mailcow dovecot quota · seafile seadrive · docspell oidc · bookstack pdf export · outline import notion · linkwarden s3 · immich external library · photoprism places · navidrome transcoding · jellyfin hwa tone mapping (Tur 10'da yapıldı, farklı açı) · esphome voice pe timer · zwave firmware ota · klipper resonance data · prusa connect · bambu studio lan discovery · octoprint spoolmanager · inventree barcode plugin · kimai invoice template · grist sandbox gvisor · nocodb webhook · gatus tcp checks · librenms oxidized · netdata ebpf · scrutiny temperature alerts · birdnet-go rtsp
+
+**Beklenen oran:** %70 ham, %85+ docs-troubleshooting ön filtresiyle.
+
+## Toplam durum (Tur 9–14)
+
+- **Tech yazı:** 206–446 → **241 yazı**
+- **Test edilen tech sorgu:** 335 → **242 LOW (%72)**
+- **Hub sayfası:** 246, artık 230'dan fazla link
+- **Ortalama uzunluk:** Tur 14'te 921 kelime/makale (toplam 92.195 kelime)
+
+## Hâlâ ölçülmemiş olan
+
+241 tech yazısının hiçbiri yayınlanmadı. Bu turda da ölçüm yapılmadı. Tur 13'ün sonunda yazdığım şey aynen geçerli: strateji SERP okumasına dayanıyor, trafik verisine değil. 241 yazı, ölçüm yapılmadan üretilmiş 241 hipotez.
+
+En büyük bilinmeyen **talep** tarafında: bu sorguların rekabeti düşük olduğunu ölçtük, **arama hacmi** olduğunu ölçmedik. "pingvin share upload failed" için SERP boş olabilir çünkü kimse aramıyor. Search Console impression verisi bu sorunun tek cevabı.

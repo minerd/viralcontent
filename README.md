@@ -23,7 +23,7 @@
 | `tools/ac_miner_tech.py` + `data/longtail-queries-tech.txt` | **Teknoloji madencisi**: marka filtresi yok, şekil filtresi var (hata/arıza/kayıp), 4.976 sorgu |
 | `tools/ac_miner_tech2.py` + `data/longtail-queries-tech2.txt` | **Self-hosted/homelab madencisi** (en verimli seam), 2.653 sorgu |
 | `research/tech-longtail-2026-10.md` | **"Neden hit alamıyoruz"**: tech'te haber yazmanın neden kaybettiği, işe yarayan 3 sorgu şekli, 25 sorgu test sonucu |
-| `articles/` | 346 İngilizce makale |
+| `articles/` | 446 İngilizce makale |
 
 ## Makaleler
 
@@ -103,9 +103,23 @@ Alanlar: Home Assistant çekirdeği (recorder, MariaDB migration, backup, Influx
 
 **İkinci gözlem:** Tur 13'teki üç ayrı makale aynı kök nedene indi — reverse proxy'nin varsayılanları (`client_max_body_size 1m`, `proxy_buffering on`, `proxy_read_timeout 60s`). Bu, gelecek bir hub sayfası için hazır konu.
 
+347–446 **Tur 14 — 100 makale, tamamı teknoloji** (142 sorgu → 100 LOW, **%70**). Ham oran; Tur 13'ün %89'u ön elemeden sonraydı, burada 100 LOW *bulmak* gerektiği için havuz genişletildi.
+
+**Tur 14'ün en değerli çıktısı 100 LOW değil, 42 reddedilen sorgu.** Rekabetin nerede olduğunun haritası çıktı, üç kategori:
+
+1. **Kurumsal/altyapı kelime dağarcığı** — cluster, load balancer, tunnel, passthrough, failover. UniFi adoption'da 6 dedike blog, cloudflared 502'de oneuptime ×3, keepalived split-brain'de devopsil ×2. B2B SaaS bloglarının reklam hedefi; girme.
+2. **Resmi dokümantasyonun belirtiyi adıyla kapattığı projeler** — Cartographer, Shinobi, 2FAuth, RomM, cross-seed, SABnzbd, NUT, Mosquitto bridge, Octopus Energy, Obico. Hepsinin docs sitesinde belirtinin adını taşıyan bir sayfa var ve Google onu ilk sıraya koyuyor.
+3. **Tek ürüne adanmış "her hata mesajı" mikro-siteleri** — yeni bir rakip tipi. hproxy.com/flaresolverr-not-working, flowgenius.in (n8n ×2), markaicode + insiderllm (Ollama), zapcraft + benchweld (LightBurn), feishin.net'in kendi "common errors" sayfası.
+
+**Tur 14'ün kuralı — docs ön kontrolü:** SERP testinden *önce* `site:docs.<proje>.<tld> <belirti>` ara. 10 saniye sürüyor, test edilecek aday sayısını yarıya indiriyor, ve Tur 14'teki 42 reddin 10'unu test etmeden elerdi.
+
+**Hâlâ temiz olan:** tek geliştiricinin GitHub-only projesi (Miniflux, linkding, listmonk, Maloja, Wizarr, Memos, Homebox, Peppermint, Owncast, GoToSocial, Piwigo, LibrePhotos — iki batch %100 geçti) ve hobi donanımı (WeeWX, Snapcast, shairport-sync, Lyrion, Grott, rtl_433, BirdNET-Pi, tar1090, LinuxCNC, MiSTer).
+
+**Reverse proxy hub konusu artık 8 makaleye dayanıyor.** Tur 13'te üç, Tur 14'te beş daha: Docmost, Pingvin Share, Trilium, Kavita OPDS, FreshRSS, Memos, Healthchecks, Fluidd. İki hub konusu hazır: *"The four nginx defaults that break self-hosted apps"* ve *"Forward-auth breaks these endpoints"* — ikincisinin SERP'te hiç karşılığı yok.
+
 ⚠️ Denetim notu: 31–54 arasındaki marka/ürün yazılarının çoğunun rekabeti sonradan yüksek çıktı. Ayrıntı `research/low-competition-2026-09.md` bölüm 7'de. **Neden** yüksek çıktığı Tur 9'da ölçüldü: bir AI/tech haberi 24–72 saatte hem büyük yayıncılar hem içerik çiftlikleri tarafından kapatılıyor. Tech yazarken haber değil **sürüm+belirti / niyet boşluğu / GitHub-only** şekillerini kullan — `research/tech-longtail-2026-10.md`.
 
-4–346 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
+4–446 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
 
 Taslaklardaki `[ADD: ...]` yerleri senin gerçek deneme sonuçların ve ekran görüntülerinle doldurulmalı.
 Bu kısım bilerek boş: yazıyı Google'da sıralatan ve insan yazmış gibi hissettiren şey tam olarak o.
