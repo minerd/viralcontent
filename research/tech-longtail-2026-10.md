@@ -180,3 +180,73 @@ Bu kalıp aynı zamanda **otorite sinyali** veriyor: forumdan kopyalanmış bir 
 immich machine learning container restarting · qbittorrent stalled after update · sonarr import failed after update · caddy certificate error after update · traefik 404 after update · k3s node notready after reboot · portainer agent not connecting · watchtower broke my container · jellyfin intel qsv after driver update · scrypted plugin crash loop · node-red flows missing after update · mosquitto connection refused after update · immich mobile upload stuck · navidrome scan not finding files · restic repository locked · borgbackup lock timeout · duplicati database rebuild stuck · zwave-js-ui devices dead after update · esphome ota failed after update · proxmox backup job failed after upgrade
 
 **Beklenen oran:** %70+. Bu listeyi bitirmek 3–4 tur yeter.
+
+---
+
+# Tur 11: ön-elemeli listeden hasat + hub sayfası (18 sorgu → 12 LOW, %67)
+
+Tur 10'un sonunda bırakılan 20 aday test edildi. Oran %67 — Tur 10'un %77'sinin biraz altında, çünkü listedeki bazı adaylar bu arada kapanmış (ya da zaten MEDIUM'du).
+
+## Yazılanlar (234–245)
+
+| Sorgu | SERP | Makale |
+|---|---|---|
+| immich machine learning container restarting | **sadece** Immich GitHub issues | ✅ 234 |
+| sonarr not importing downloads | sonarr forumları + GitHub | ✅ 235 |
+| caddy certificate error after update | caddy.community + GitHub | ✅ 236 |
+| z-wave js ui devices dead after update | HA core GitHub + HA community | ✅ 237 |
+| traefik 404 after update | **sadece** Traefik community forumu | ✅ 238 |
+| node-red flows missing after update | nodered forum + HA community + GitHub | ✅ 239 |
+| mosquitto not authorised after update | HA addons GitHub + chirpstack forumu | ✅ 240 |
+| jellyfin intel qsv stopped after driver/kernel update | Jellyfin forum + GitHub + Proxmox (kurulum rehberleri başka soruyu cevaplıyor) | ✅ 241 |
+| scrypted plugin crash loop | **sadece** koush/scrypted GitHub | ✅ 242 |
+| immich mobile upload stuck | **sadece** Immich GitHub | ✅ 243 |
+| proxmox backup job failed after upgrade | **sadece** Proxmox forumu | ✅ 244 |
+| esphome ota update failed | ESPHome GitHub + HA community | ✅ 245 |
+
+## HIGH/MEDIUM çıkanlar — ve ne öğrettikleri
+
+| Sorgu | Kim kapatmış | Ders |
+|---|---|---|
+| portainer agent not connecting | **oneuptime'ın 6 dedike sayfası** (hepsi 2026-03-20 tarihli) | Bir B2B blog bütün bir ürünün uzun kuyruğunu tek günde kapatabiliyor |
+| k3s node notready after reboot | 3 Medium yazısı (biri tam olarak "clock skew" cevabını vermiş) + drdroid + groundcover | Kubernetes artık "self-hosted" değil, kurumsal içerik alanı |
+| watchtower broken update | dev.to + 4 blog | Watchtower'ın bakımsız kalması bir haber döngüsü yarattı, blog'lar doldu |
+| restic repository locked | homelabfix dedike sayfa | Tek kişilik homelab blog'ları da seam'i kapatıyor |
+| qbittorrent stalled | makeuseof + torrenttrackerslist | Torrent = tüketici ölçeği, her zaman HIGH |
+| navidrome scan | resmi docs iyi yazılmış | Projenin kendi dokümantasyonu iyiyse seam yok |
+
+**Yeni kural:** Şekil C'nin istisnası var. Bir araç şu üçünden birine sahipse rekabet var:
+1. **Kurumsal/B2B ilgisi** (Kubernetes, Portainer, gözlemlenebilirlik) → SaaS blog'ları içerik üretiyor
+2. **İyi yazılmış resmi dokümantasyon** (Navidrome, Tailscale) → docs sıralanıyor, makaleye yer kalmıyor
+3. **Bir haber döngüsü** (Watchtower'ın terk edilmesi) → bloglar konuyu doldurdu
+
+Hâlâ en temiz alan: **tek geliştiricinin veya küçük bir ekibin projesi + donanıma bağlı + cevabı issue tracker'da** (Scrypted, Immich, ESPHome, Z-Wave JS UI, Zigbee2MQTT).
+
+## Hub sayfası (246)
+
+Tur 10'da önerilen küme sayfası yazıldı: **"A Self-Hosted Service Broke After an Update: What to Check, in Order"** (`246-self-hosted-after-update-checklist.md`).
+
+İçeriği, 30 yazıyı yazarken çıkan tekrar eden rutin:
+0. **Önce döngüyü durdur** (crash loop ACME kotası yakıyor, Z-Wave stick'i dövüyor)
+1. **Ne değişti, tek satır** (servis sürümü + host + unattended mı)
+2. **Doğru log** — exit 137/OOMKilled, config parse hatası, permission denied
+3. **Veri yolunu kanıtla** — "verilerim gitti" vakalarının neredeyse tamamı farklı dizinden okuma
+4. **Kasıtlı breaking change mi** (Mosquitto anonim giriş, Traefik v3 söz dizimi, DSM 7 SMB izni, Unraid boş pool, Grafana UID)
+5. **Tek değişkenle lokalize et** (sürüm pin, kernel pin, proxy'yi atla)
+6. **Sonra ileriye doğru düzelt**
+
+Ayrıca **"dört hata"** (kanıtlamadan re-pair/re-flash, boş config'i deploy etmek, döngüyü açık bırakmak, beş şeyi birden değiştirmek) ve bir **alışkanlık tablosu** (tag pin, named volume, hangi dosyayı yedekle, `by-id` yolu).
+
+Sayfa 26 yazıya link veriyor; küme hem iç bağlantı hem de "update sonrası" uzun kuyruğunu topluyor.
+
+## Toplam durum
+
+- **Tech yazı sayısı:** 206–246 arası 41 yazı (Tur 9: 11, Tur 10: 17, Tur 11: 13)
+- **Test edilen tech sorgu:** 65 → **40 LOW (%62)**
+- **Kalan havuz:** `longtail-queries-tech.txt` (4.976) + `-tech2.txt` (2.653) = **7.629 sorgu**, test edilmemiş
+
+## Tur 12 adayları
+
+Aynı testi geçmeye en yakın, henüz denenmemiş olanlar (tek geliştirici + donanım + issue tracker kriterine uyanlar):
+
+mealie recipe import failing · homebridge child bridge not responding · zwavejs2mqtt ozw migration · wyoming satellite not detected · piper tts not working after update · whisper addon slow after update · double-take not detecting · motioneye camera offline after update · shinobi stream not loading · octoprint serial connection failed after update · klipper mcu error after firmware update · moonraker database locked · home assistant recorder database corrupt after update · esphome bluetooth proxy stopped working · music assistant player unavailable · plex meta manager failing · tdarr node not connecting · stash scan not finding scenes · romm library empty after update · gotify notifications stopped after update

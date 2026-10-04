@@ -23,7 +23,7 @@
 | `tools/ac_miner_tech.py` + `data/longtail-queries-tech.txt` | **Teknoloji madencisi**: marka filtresi yok, şekil filtresi var (hata/arıza/kayıp), 4.976 sorgu |
 | `tools/ac_miner_tech2.py` + `data/longtail-queries-tech2.txt` | **Self-hosted/homelab madencisi** (en verimli seam), 2.653 sorgu |
 | `research/tech-longtail-2026-10.md` | **"Neden hit alamıyoruz"**: tech'te haber yazmanın neden kaybettiği, işe yarayan 3 sorgu şekli, 25 sorgu test sonucu |
-| `articles/` | 233 İngilizce makale |
+| `articles/` | 246 İngilizce makale |
 
 ## Makaleler
 
@@ -87,9 +87,13 @@
 
 **Tur 10'un kuralı — tekrar üretilebilirlik testi:** "Bir içerik çiftliği yazarı bu sorunu kendi makinesinde üretebilir mi?" Evet ise (Ollama kur, iOS güncelle) rekabet var. Hayır ise (16 cihazlı Zigbee ağı, upgrade edilmiş authentik, Coral TPU'lu Frigate) senin alanın. `ollama not using gpu` → 8 dedike sayfa. `authentik login loop after upgrade` → sıfır makale.
 
+234–246 **Tur 11 — teknoloji** (18 sorgu → 12 LOW, %67). Tur 10'un ön-elemeli listesinden hasat: Immich (ML container, mobil upload), Sonarr import, Caddy sertifika, Z-Wave JS UI, Traefik 404, Node-RED kayıp flow'lar, Mosquitto yetkilendirme, Jellyfin QSV, Scrypted crash loop, Proxmox backup, ESPHome OTA. Artı **246 = küme hub sayfası**: *"A Self-Hosted Service Broke After an Update"* — 26 yazıya link veren, 6 adımlık ilk-saat rutini.
+
+**Tur 11'in kuralı — Şekil C'nin istisnaları:** Bir araç (1) kurumsal/B2B ilgisi görüyorsa (Kubernetes, Portainer → SaaS blogları), (2) resmi dokümantasyonu iyiyse (Navidrome), ya da (3) bir haber döngüsüne girdiyse (Watchtower'ın terk edilmesi) rekabet var. En temiz alan: tek geliştirici projesi + donanıma bağlı + cevap issue tracker'da.
+
 ⚠️ Denetim notu: 31–54 arasındaki marka/ürün yazılarının çoğunun rekabeti sonradan yüksek çıktı. Ayrıntı `research/low-competition-2026-09.md` bölüm 7'de. **Neden** yüksek çıktığı Tur 9'da ölçüldü: bir AI/tech haberi 24–72 saatte hem büyük yayıncılar hem içerik çiftlikleri tarafından kapatılıyor. Tech yazarken haber değil **sürüm+belirti / niyet boşluğu / GitHub-only** şekillerini kullan — `research/tech-longtail-2026-10.md`.
 
-4–233 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
+4–246 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
 
 Taslaklardaki `[ADD: ...]` yerleri senin gerçek deneme sonuçların ve ekran görüntülerinle doldurulmalı.
 Bu kısım bilerek boş: yazıyı Google'da sıralatan ve insan yazmış gibi hissettiren şey tam olarak o.
