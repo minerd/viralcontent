@@ -23,7 +23,7 @@
 | `tools/ac_miner_tech.py` + `data/longtail-queries-tech.txt` | **Teknoloji madencisi**: marka filtresi yok, şekil filtresi var (hata/arıza/kayıp), 4.976 sorgu |
 | `tools/ac_miner_tech2.py` + `data/longtail-queries-tech2.txt` | **Self-hosted/homelab madencisi** (en verimli seam), 2.653 sorgu |
 | `research/tech-longtail-2026-10.md` | **"Neden hit alamıyoruz"**: tech'te haber yazmanın neden kaybettiği, işe yarayan 3 sorgu şekli, 25 sorgu test sonucu |
-| `articles/` | 296 İngilizce makale |
+| `articles/` | 346 İngilizce makale |
 
 ## Makaleler
 
@@ -97,9 +97,15 @@ Alanlar: Home Assistant çekirdeği (recorder, MariaDB migration, backup, Influx
 
 **Aday seçme kuralı (Tur 12):** ürünü değil **kitleyi** düşün — "bunu kuran kaç kişi var ve kaçı blog yazarı?" Oran küçükse seam temiz. `ollama not using gpu` → 8 dedike sayfa; `pterodactyl console websocket` → sıfır.
 
+297–346 **Tur 13 — 50 makale daha, tamamı teknoloji** (56 sorgu → 50 LOW, **%89**; oran yüksek çünkü SERP testinden *önce* Tur 12'nin kitle kuralıyla eleme yapıldı). Alanlar: Klipper/CAN/crowsnest/OrcaSlicer (3D baskı), Home Assistant çevresi (Voice PE, Reolink, Bluetooth adaptörü, ZBT-1 firmware, LocalTuya, ESPHome Modbus, evcc), depolama (SnapRAID, ZFS degraded, rclone mount), ağ ve erişim (Technitium, Headscale, wg-easy, Authelia, NPM sertifika, Pangolin, docker-mailserver), izleme ve güvenlik (CrowdSec, fail2ban, Zabbix, Dozzle), medya (Navidrome, Jellyfin SyncPlay, Threadfin, TVHeadend, Lidarr, unpackerr, Audiobookshelf, TubeArchivist, Readarr'ın kapanışı), foto/doküman (PhotoPrism, Nextcloud Memories, immich-go, Stirling PDF, Linkwarden, Karakeep) ve senkronizasyon (Obsidian LiveSync, Joplin Server, Seafile, Actual Budget, Baïkal).
+
+**Tur 13'ün kuralı — "tek tüketici" sınıfı:** Bir cihaz ya da protokol **tek seferde tek bağlantı** kabul ediyorsa, o sorun içerik çiftliği için erişilemezdir; çünkü sorun ancak iki şey aynı anda çalıştığında ortaya çıkar. Tuya cihazları tek yerel bağlantı alıyor (telefondaki açık uygulama HA'yı engelliyor), ZBT-1'in seri portu tek tüketiciye veriliyor (firmware güncellemesi için ZHA'yı *disable* etmek gerekiyor), Reolink kameralar sınırlı ONVIF aboneliği tutuyor. Bu kurulumu çalıştırmamış biri bu yazıyı yazamaz.
+
+**İkinci gözlem:** Tur 13'teki üç ayrı makale aynı kök nedene indi — reverse proxy'nin varsayılanları (`client_max_body_size 1m`, `proxy_buffering on`, `proxy_read_timeout 60s`). Bu, gelecek bir hub sayfası için hazır konu.
+
 ⚠️ Denetim notu: 31–54 arasındaki marka/ürün yazılarının çoğunun rekabeti sonradan yüksek çıktı. Ayrıntı `research/low-competition-2026-09.md` bölüm 7'de. **Neden** yüksek çıktığı Tur 9'da ölçüldü: bir AI/tech haberi 24–72 saatte hem büyük yayıncılar hem içerik çiftlikleri tarafından kapatılıyor. Tech yazarken haber değil **sürüm+belirti / niyet boşluğu / GitHub-only** şekillerini kullan — `research/tech-longtail-2026-10.md`.
 
-4–296 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
+4–346 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
 
 Taslaklardaki `[ADD: ...]` yerleri senin gerçek deneme sonuçların ve ekran görüntülerinle doldurulmalı.
 Bu kısım bilerek boş: yazıyı Google'da sıralatan ve insan yazmış gibi hissettiren şey tam olarak o.

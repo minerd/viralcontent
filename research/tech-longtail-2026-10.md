@@ -315,3 +315,113 @@ klipper input shaper verisi okunmuyor · bambu/prusa connect bağlantısı · ro
 - **Tech yazı:** 206–296 → **91 yazı**
 - **Test edilen tech sorgu:** 137 → **92 LOW (%67)**
 - **Kalan havuz:** 7.629 madenci sorgusu + yukarıdaki 20 el seçimi aday
+
+---
+
+# Tur 13 — 50 makale daha (297–346)
+
+**Tarih:** 4 Ekim 2026. **Yöntem:** Tur 10–12'nin kriteri aynen uygulandı — *tek geliştirici projesi + donanıma bağlı + cevabı issue tracker'da*. Tur 12'nin "kitleyi düşün" kuralı aday seçiminde ön filtre olarak kullanıldı, yani SERP testine girmeden önce "bunu kuran kaç kişi var, kaçı blog yazarı?" sorusu soruldu.
+
+**Test:** 56 sorgu canlı SERP'te okundu → **50 LOW (%89)**. Oran Tur 12'nin %72'sinden yüksek; sebep test etmeden önceki eleme, test yönteminin değişmesi değil. Ham oran (eleme öncesi) hâlâ %70 civarında.
+
+## LOW bulgular ve makaleler
+
+| # | Sorgu | Dayanak |
+|---|---|---|
+| 297 | klipper adxl345 not detected | Klipper GitHub + Discourse |
+| 298 | readarr metadata server down | Proje arşivlendi; GitHub + Discord |
+| 299 | nginx proxy manager certificate internal error | NPM issues |
+| 300 | double-take not detecting faces | GitHub issues |
+| 301 | tubearchivist download failed | GitHub issues |
+| 302 | karakeep/hoarder not archiving | GitHub issues |
+| 303 | actual budget sync file too large | GitHub + Discord |
+| 304 | obsidian livesync couchdb cors | obsidian-livesync issues |
+| 305 | ha voice pe wake word not responding | HA community + GitHub |
+| 306 | home assistant reolink unavailable | HA core issues |
+| 307 | scrypted nvr storage filling up | Discord + GitHub |
+| 308 | immich-go albums missing | immich-go issues |
+| 309 | linkwarden preserved formats missing | GitHub issues |
+| 310 | navidrome scrobbling not working | GitHub + docs |
+| 311 | klipper canbus uuid not found | GitHub + Discourse |
+| 312 | crowsnest webcam not working | GitHub issues |
+| 313 | orcaslicer network plugin missing | GitHub issues |
+| 314 | technitium dns not resolving | GitHub + forum |
+| 315 | headscale derp relay only | GitHub issues |
+| 316 | wg-easy handshake no internet | GitHub issues |
+| 317 | authelia redirect loop | GitHub discussions |
+| 318 | stirling pdf ocr not working | GitHub issues |
+| 319 | baikal caldav ios not syncing | GitHub + sabre/dav |
+| 320 | joplin server 404 sync | Joplin forum + GitHub |
+| 321 | rclone mount permission denied | rclone forum |
+| 322 | snapraid unexpected time change | SnapRAID forum |
+| 323 | zfs pool degraded after reboot | OpenZFS issues + forumlar |
+| 324 | gitea actions runner not picking jobs | Gitea + act_runner issues |
+| 325 | photoprism indexing stuck | GitHub issues |
+| 326 | nextcloud memories transcoding failed | Memories issues |
+| 327 | jellyfin syncplay out of sync | GitHub + forum |
+| 328 | threadfin channels not loading | GitHub issues |
+| 329 | tvheadend epg empty | Forum + GitHub |
+| 330 | lidarr metadata not loading | GitHub + *arr forum |
+| 331 | unpackerr not extracting | GitHub issues |
+| 332 | crowdsec bouncer not blocking | GitHub + Discourse |
+| 333 | fail2ban nginx jail not banning | GitHub discussions + Arch BBS + DietPi |
+| 334 | docker-mailserver relay access denied | GitHub issues |
+| 335 | zabbix agent not available | Zabbix forum + docs |
+| 336 | ha bluetooth adapter not found | HA community + Proxmox forum |
+| 337 | localtuya device unavailable | GitHub + HA community |
+| 338 | zbt-1 / skyconnect firmware update failed | GitHub + HA community |
+| 339 | dozzle no logs showing | GitHub issues + FAQ |
+| 340 | audiobookshelf metadata not updating | GitHub discussions |
+| 341 | evcc cannot create charger | GitHub issues + discussions |
+| 342 | esphome modbus no response | GitHub + HA community |
+| 343 | komodo periphery unreachable | GitHub issues |
+| 344 | seafile permission denied resync | Seafile forum + GitHub |
+| 345 | pangolin newt site offline | fosrl/pangolin issues |
+| 346 | semaphore playbook could not be found | semaphoreui issues |
+
+## Reddedilenler ve sebepleri
+
+| Sorgu | Sebep |
+|---|---|
+| recyclarr config error | Resmi dokümantasyonda dedike "errors" sayfası |
+| coolify deploy failed | fixdevs, localtonet, dplooy — üç dedike blog |
+| cloudflare error 1033 | HIGH — üç dedike blog + resmi doküman |
+| romm library empty | docs.romm.app'te dedike scanning troubleshooting |
+| nfs stale file handle | HIGH — oneuptime, cyberciti, yomotherboard, simplified.guide |
+| loki promtail not receiving logs | oneuptime + Grafana dokümantasyonu |
+
+## Tur 13'ün kuralı — "tek tüketici" sınıfı
+
+Tur 13'te tekrar eden, daha önce adlandırmadığımız bir desen var: **tek seferde tek tüketiciye izin veren donanım veya protokol.** Bu sınıf içerik çiftliği için neredeyse erişilemez, çünkü sorunun kendisi iki şeyin aynı anda çalıştığı bir kurulumda ortaya çıkıyor.
+
+Örnekler:
+
+- **Tuya cihazları** tek yerel bağlantı kabul ediyor → telefonda açık Smart Life uygulaması Home Assistant'ı engelliyor (337)
+- **ZBT-1/SkyConnect** seri portu tek tüketiciye veriyor → firmware güncellemesi için ZHA'yı *disable* etmek gerekiyor, reload yetmiyor (338)
+- **Reolink kameralar** sınırlı sayıda ONVIF aboneliği tutuyor → HA + Frigate + NVR üçlüsü slotu tüketiyor (306)
+- **Seri port / Modbus** (341, 342), **FUSE mount sahipliği** (321), **ONVIF push** — hepsi aynı şekil
+
+Bu sorunları yazabilmek için o kurulumu çalıştırmış olmak gerekiyor; sentetik olarak üretilemez. SERP'te karşılığı sıfır dedike makale.
+
+## İkinci gözlem — "proxy'nin yuttuğu stream" sınıfı
+
+Üç ayrı makale (339 Dozzle, 303 Actual Budget, 320 Joplin) aynı kök nedene indi: **reverse proxy'nin varsayılanları.** `client_max_body_size 1m`, `proxy_buffering on`, `proxy_read_timeout 60s`. Bu üçlü, self-hosted uygulamaların en sık ve en yanlış teşhis edilen hata kaynağı. Her uygulama kendi hata mesajını veriyor, kök neden aynı.
+
+Bu gelecekteki turlar için bir hub konusu: *"The four nginx defaults that break self-hosted apps"* — 303, 320, 339, 304 ve 326'ya bağlanır.
+
+## Bir sonraki tur için ön-elemeli adaylar
+
+woodpecker ci clone failed · dockge stack not starting · memos/docmost upload · filebrowser permissions · mailcow dovecot · dokploy build failed · ha octopus energy integration · bambu connect / prusa connect bağlantısı · zwavejs2mqtt ozw migration · shinobi stream not loading · paperless-ai tagging · frigate+coral multi-tpu · navidrome jukebox mode · gokapi/pingvin share · beets import stuck · ombi requests · changedetection.io notifications · vaultwarden emergency access · sliding sync / matrix conduit · owntracks/traccar not reporting
+
+**Beklenen oran:** %75+ (ön eleme uygulanırsa).
+
+## Toplam durum (Tur 9–13)
+
+- **Tech yazı:** 206–346 → **141 yazı**
+- **Test edilen tech sorgu:** 193 → **142 LOW (%74)**
+- **Hub sayfası:** 246, artık 110'dan fazla yazıya link veriyor
+- **Kalan havuz:** 7.629 madenci sorgusu + yukarıdaki 20 el seçimi aday
+
+## Hâlâ ölçülmemiş olan
+
+Bu 141 yazının hiçbiri production'da ölçülmedi. Strateji SERP okumasına dayanıyor, trafik verisine değil. İlk 10–15 yazı yayınlandıktan 4–6 hafta sonra Search Console'daki **impression** (sorgu gerçekten aranıyor mu) ve **ortalama pozisyon** (seam gerçekten açık mıydı) verisine bakmadan bir sonraki 50'yi yazmanın marjinal değeri düşüyor. Öneri: yayınla, ölç, sonra devam et.
