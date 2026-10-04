@@ -189,3 +189,29 @@ Yazılanlar (176–196):
 **HIGH (atlandı):** pheasant chicks dying · isopod colony dying · ferret hiccups · gerbils alone after one dies · crayfish molt vs dead · mystery snail eggs moving · gouldian bald · kefir fizzy · bees washboarding · hard cider rotten eggs · worm bin too wet · bokashi smell · microgreens (hepsi) · hydroponic lettuce bitter · carnivorous plant winter feeding · felting needles breaking · tufting gun jamming · leather dye streaky · lino prints patchy · rock tumbler grit · fermented carrots slimy · sugar in lacto pickles · dubia + crickets · rat scratching · rabbit litter box · fire cider blue garlic · garlic honey cooking · feeder crickets cannibalism · canary sleeping daytime · hermit crab chirping/hair · hermann tortoise squeak/pacing · blue tongue skink peeing · quaker parrot purring
 
 **Yöntem notu:** Tur 8'de en güvenilir LOW sinyali yine **niyet boşluğu** oldu (sorunun yabani/vahşi hayvan, farklı tür ya da farklı süreç versiyonunun cevaplanması: kaz, hindi palazı, eclectus, ördek yavrusu, kaplumbağa, etobur bitki, shio koji, istiridye mantarı sporu). İkinci sinyal: **tamamen forum** (akrep, karides, akvaryum bitkisi). Marka/ürün ve "kendi niş sitesi olan hobi" alanlarından uzak dur.
+
+## Tur 9 (kümes yavruları + az tutulan papağanlar + akvaryum süreç + fermente; `tools/ac_miner_round9.py`, `data/longtail-queries-round9.txt`, 2.046 soru)
+
+Tur 8'in "hâlâ açık" listesi hedeflendi: kümes/su kuşu yavruları, az tutulan papağanlar, ispinoz üretimi, akvaryum süreç/kimya, sürüngen deri-renk, fermente güvenlik/oran. Ek olarak hiç taranmamış alanlar: chukar/sülün/peafowl, ferret-degu-gerbil sonrası küçük memeliler, mourning gecko/sand boa, amazake/koji/miso/nukazuke, injera, idli, perry, kilju, kefir cheese.
+
+**34 niş sorgu test edildi → 9 LOW.** Oran düştü (Tur 7: %38, Tur 8: %36, Tur 9: %26) — niş hayvan/fermente alanı artık doygunlaşıyor. Bu yüzden bu tur **ikiye bölündü**: niş + teknoloji (bkz. `research/tech-longtail-2026-10.md`).
+
+Yazılanlar (197–205):
+
+| Sorgu | Not | Makale |
+|---|---|---|
+| why are my goslings limping | JustAnswer + backyardchickens; niacin açısı hiçbir yerde toplu değil | ✅ 197 |
+| why are my guppy fry disappearing | sayfalar "dying" versiyonunu cevaplıyor, "kayboluyor" ≠ "ölüyor" | ✅ 198 |
+| why is my silkie chick sneezing | forum + JustAnswer; silkie'ye özel tepe tüyü/burun deliği açısı yok | ✅ 199 |
+| why does my pionus smell musty | **sonuçlar rutubetli ev ve insan anatomisi hakkında** — en temiz niyet boşluğu | ✅ 200 |
+| why is my indian ringneck losing its voice | JustAnswer + indianringneck.com forumu | ✅ 201 |
+| is kilju safe to drink | **sonuçlar bir video oyunu hakkında** (My Summer Car) | ✅ 202 |
+| why is my kefir cheese bitter | sayfalar içilen kefiri cevaplıyor, süzülmüş peyniri değil | ✅ 203 |
+| why is my muscovy duckling not growing | sadece forum; "tür doğası gereği yavaş" açısı kritik | ✅ 204 |
+| why aren't my diamond doves sitting on their eggs | Lafeber Q&A + eski hobi siteleri | ✅ 205 |
+
+**MEDIUM (sonraki tura aday):** peahen sesi · society finch civciv atma · senegal plucking · coturnix civciv ölümü · crested gecko ayak parmağında kalan gömlek · brine shrimp yumurtası açmıyor · miso beyaz lekeler · injera göz yapmıyor · amazake ekşi
+
+**HIGH (atlandı):** pheasant chicks dying · nerite snail not moving · frizzle cold hardy · vinegar mother slimy · garter snake musking · idli batter rising · society finch tossing
+
+**Yöntem notu:** Bu turda LOW bulma maliyeti belirgin arttı. Hayvan davranışı sorgularının çoğu artık ya dedike hobi sitelerine (ladygouldianfinch, silverhomestead, aquifarm, isopods.co.uk) ya da içerik çiftliklerine kapılmış durumda. Kalan seam iki yerde: (1) **tür doğası gereği** yanlış beklentiyi düzelten sorular (Muscovy yavaş büyür, pionus kokar, kilju methanol yapmaz), (2) sonuçların **tamamen başka bir şeyi** cevapladığı niyet boşlukları. Düz "why is my X doing Y" artık yetmiyor.

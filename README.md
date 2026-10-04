@@ -19,7 +19,10 @@
 | `tools/ac_miner_exotic.py` + `data/longtail-queries-exotic.txt` | Egzotik hayvan + fermente madencisi, 2.183 soru |
 | `tools/ac_miner_deep.py` + `data/longtail-queries-deep.txt` | Derin egzotik + süt/içki madencisi, 1.725 soru |
 | `tools/ac_miner_round8.py` + `data/longtail-queries-round8.txt` | Küçük memeli/kafes kuşu, akvaryum, koji-miso, el işi madencisi, 2.762 soru |
-| `articles/` | 196 İngilizce makale |
+| `tools/ac_miner_round9.py` + `data/longtail-queries-round9.txt` | Kümes yavrusu, az tutulan papağan, akvaryum süreç, fermente madencisi, 2.046 soru |
+| `tools/ac_miner_tech.py` + `data/longtail-queries-tech.txt` | **Teknoloji madencisi**: marka filtresi yok, şekil filtresi var (hata/arıza/kayıp), 4.976 sorgu |
+| `research/tech-longtail-2026-10.md` | **"Neden hit alamıyoruz"**: tech'te haber yazmanın neden kaybettiği, işe yarayan 3 sorgu şekli, 25 sorgu test sonucu |
+| `articles/` | 216 İngilizce makale |
 
 ## Makaleler
 
@@ -75,9 +78,13 @@
 
 176–196 **Tur 8 kümes kuşu, papağan, akvaryum/sürüngen, fermente güvenliği** (kaz gece sesi, hindi palazı ×3, eclectus ×2, parrotlet, zebra ispinozu, ördek yavrusu tüy, kırmızı yanaklı kaplumbağa, mavi dilli skink, imparator akrep, kiraz karidesi, akvaryum bitkisi, etobur bitki kokusu, sarımsaklı bal, pancar kvası, turşu yumurta, laktofermente salamura, shio koji/miso, istiridye mantarı)
 
-⚠️ Denetim notu: 31–54 arasındaki marka/ürün yazılarının çoğunun rekabeti sonradan yüksek çıktı. Ayrıntı `research/low-competition-2026-09.md` bölüm 7'de.
+197–205 **Tur 9 niş** (kaz yavrusu topallama, guppy yavrusu kayboluyor, silkie civciv hapşırma, pionus kokusu, ringneck ses kaybı, kilju güvenliği, kefir peyniri acılığı, muscovy yavaş büyüme, elmas kumru yumurta terk)
 
-4–196 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
+206–216 **Tur 9 teknoloji** — üç kazanan şekil: **sürüm+belirti** (iOS 27 klavye gecikmesi, iOS 27 renkli ikon takılması, Excel Mac'te Copilot yok), **niyet boşluğu** (ChatGPT ile çok sayfa PDF, iOS 27 Photos albümleri, ChatGPT projects kayboldu), **GitHub-only self-hosted** (Home Assistant iOS 27 yavaşlığı, Jellyfin HDR tone mapping, Proxmox kernel sonrası VM, Pi-hole engellemiyor, Frigate Coral görünmüyor). Makale 21 de güncellendi (Apple Pay/Wallet dalgası + panic-full log).
+
+⚠️ Denetim notu: 31–54 arasındaki marka/ürün yazılarının çoğunun rekabeti sonradan yüksek çıktı. Ayrıntı `research/low-competition-2026-09.md` bölüm 7'de. **Neden** yüksek çıktığı Tur 9'da ölçüldü: bir AI/tech haberi 24–72 saatte hem büyük yayıncılar hem içerik çiftlikleri tarafından kapatılıyor. Tech yazarken haber değil **sürüm+belirti / niyet boşluğu / GitHub-only** şekillerini kullan — `research/tech-longtail-2026-10.md`.
+
+4–216 arası yazılar deneyim gerektirmeyen açılarla yazıldı; 1–3'teki `[ADD]` yerleri kendi testlerinle doldurulmalı.
 
 Taslaklardaki `[ADD: ...]` yerleri senin gerçek deneme sonuçların ve ekran görüntülerinle doldurulmalı.
 Bu kısım bilerek boş: yazıyı Google'da sıralatan ve insan yazmış gibi hissettiren şey tam olarak o.
